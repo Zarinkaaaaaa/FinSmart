@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script defer src="script.js"></script>
+    <title>12 Р2Р</title>
+</head>
+
+<body>
+
+    <header></header>
+
+    <section class="ads">
+        <div class="container">
+            <div class="section-ads">
+                <div class="section-ads-nav">
+                    <a class="section-ads-nav--active" href="#" data-tab-trigger="ads">Объявления</a>
+                    <a href="#" data-tab-trigger="profile">Профиль</a>
+                    <a href="#" data-tab-trigger="deals">Мои сделки</a>
+
+                    <div class="nav-slider"></div>
+                </div>
+
+                <div class="ads-tab-content active" data-tab="ads">
+                    <div class="section-ads-create">
+                        <div class="section-ads-create-text">
+                            <p class="section-ads-create-title">P2P торговля</p>
+                            <p>Прямой обмен криптовалюты на фиатные деньги</p>
+                        </div>
+                        <button class="btn" data-open-create-ad>Создать объявление</button>
+                    </div>
+
+                    <div class="section-ads-filters">
+                        <div class="section-ads-filters-buttons">
+                            <button class="btn buy-btn">Купить</button>
+                            <button class="btn sell-btn">Продать</button>
+                        </div>
+
+                        <form action="">
+                            <div class="ads-form-item">
+                                <span>Актив: </span>
+                                <select name="" id="">
+                                    <option value="">USDT</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="ads-form-item">
+                                <span>Фиат: </span>
+                                <select name="" id="">
+                                    <option value="">RUB</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="ads-form-item ads-form-payment">
+                                <span>Способы оплаты: </span>
+                                <select name="" id="">
+                                    <option value="">Все способы</option>
+                                    <option value=""></option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="ads-form-item-enter">
+                                <input type="text" placeholder="Введите сумму">
+                            </div>
+                            <button class="btn">Cбросить</button>
+                        </form>
+                    </div>
+
+
+                    <div class="section-ads-result">
+                        <div class="ads-header">
+                            <div class="ads-col seller">Продавец</div>
+                            <div class="ads-col price">Цена</div>
+                            <div class="ads-col available">Доступно / Лимиты</div>
+                            <div class="ads-col payment">Способы оплаты</div>
+                            <div class="ads-col action">Способы оплаты</div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">Сбербанк</span>
+                                    <span class="payment-tag">СБП</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy" data-open-kyc-modal>Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">Сбербанк</span>
+                                    <span class="payment-tag">СБП</span>
+                                    <span class="payment-tag">Тинькофф</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">Банк. перевод</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">Сбербанк</span>
+                                    <span class="payment-tag">СБП</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">Тинькофф</span>
+                                    <span class="payment-tag">ВТБ</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">СБП</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+
+                        <div class="ads-row">
+                            <div class="ads-col seller">
+                                <div class="seller-info">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="seller-avatar">
+                                    <div class="seller-details">
+                                        <div class="seller-name">SkyTrader</div>
+                                        <div class="seller-deals">427 сделок</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ads-col price">
+                                <div class="price-value">92.45</div>
+                                <div class="price-pair">RUB/USDT</div>
+                            </div>
+                            <div class="ads-col available">
+                                <div class="available-amount">12,450 USDT</div>
+                                <div class="available-limits">Лимиты: 1,000 - 500,000 ₽</div>
+                            </div>
+                            <div class="ads-col payment">
+                                <div class="payment-methods">
+                                    <span class="payment-tag">СБП</span>
+                                </div>
+                            </div>
+                            <div class="ads-col action">
+                                <button class="btn btn-buy">Купить</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ads-pagination">
+                        <button class="pagination-btn pagination-btn-arrow prev"><svg width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1378_10796)">
+                                    <path
+                                        d="M10.6214 14.9986C10.7036 14.9991 10.7852 14.9834 10.8613 14.9523C10.9375 14.9212 11.0067 14.8753 11.0651 14.8174C11.1237 14.7593 11.1702 14.6902 11.2019 14.614C11.2337 14.5378 11.25 14.4562 11.25 14.3736C11.25 14.2911 11.2337 14.2094 11.2019 14.1333C11.1702 14.0571 11.1237 13.988 11.0651 13.9299L5.95888 8.82365C5.60775 8.47209 5.41053 7.99553 5.41053 7.49865C5.41053 7.00177 5.60775 6.52521 5.95888 6.17365L11.0651 1.0674C11.1828 0.949711 11.2489 0.790089 11.2489 0.623651C11.2489 0.457212 11.1828 0.297591 11.0651 0.179901C10.9474 0.0622112 10.7878 -0.00390625 10.6214 -0.00390625C10.4549 -0.00390625 10.2953 0.0622112 10.1776 0.179901L5.07138 5.28615C4.78036 5.57644 4.54946 5.92128 4.39192 6.30094C4.23438 6.6806 4.15329 7.0876 4.15329 7.49865C4.15329 7.90969 4.23438 8.3167 4.39192 8.69636C4.54946 9.07602 4.78036 9.42086 5.07138 9.71115L10.1776 14.8174C10.236 14.8753 10.3053 14.9212 10.3814 14.9523C10.4576 14.9834 10.5391 14.9991 10.6214 14.9986Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1378_10796">
+                                        <rect width="15" height="15" fill="white" transform="matrix(-1 0 0 1 15 0)" />
+                                    </clipPath>
+                                </defs>
+                            </svg></button>
+                        <button class="pagination-btn active">1</button>
+                        <button class="pagination-btn">2</button>
+                        <button class="pagination-btn">3</button>
+                        <button class="pagination-btn">4</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="pagination-btn">10</button>
+                        <button class="pagination-btn pagination-btn-arrow next"><svg width="15" height="15"
+                                viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1378_10799)">
+                                    <path
+                                        d="M4.37862 14.9986C4.29637 14.9991 4.21483 14.9834 4.13868 14.9523C4.06253 14.9212 3.99327 14.8753 3.93487 14.8174C3.87629 14.7593 3.8298 14.6902 3.79807 14.614C3.76634 14.5378 3.75 14.4562 3.75 14.3736C3.75 14.2911 3.76634 14.2094 3.79807 14.1333C3.8298 14.0571 3.87629 13.988 3.93487 13.9299L9.04112 8.82365C9.39225 8.47209 9.58947 7.99553 9.58947 7.49865C9.58947 7.00177 9.39225 6.52521 9.04112 6.17365L3.93487 1.0674C3.81718 0.949711 3.75107 0.790089 3.75107 0.623651C3.75107 0.457212 3.81718 0.297591 3.93487 0.179901C4.05256 0.0622112 4.21219 -0.00390625 4.37862 -0.00390625C4.54506 -0.00390625 4.70468 0.0622112 4.82237 0.179901L9.92862 5.28615C10.2196 5.57644 10.4505 5.92128 10.6081 6.30094C10.7656 6.6806 10.8467 7.0876 10.8467 7.49865C10.8467 7.90969 10.7656 8.3167 10.6081 8.69636C10.4505 9.07602 10.2196 9.42086 9.92862 9.71115L4.82237 14.8174C4.76397 14.8753 4.69471 14.9212 4.61857 14.9523C4.54242 14.9834 4.46088 14.9991 4.37862 14.9986Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1378_10799">
+                                        <rect width="15" height="15" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg></button>
+                        <div class="pagination-info">Показано 7 из 124 сделок</div>
+                    </div>
+                </div>
+
+
+                <div class="ads-tab-content" data-tab="profile">
+                    <div class="profile-placeholder">
+                        <div class="profile-card">
+                            <h2 class="profile-card__title">Профиль</h2>
+
+                            <div class="profile-card__content">
+                                <div class="profile-user">
+                                    <img src="assets/img/Ellipse.png" alt="SkyTrader" class="profile-avatar">
+                                    <div class="profile-user-info">
+                                        <div class="profile-user-name">SkyTrader</div>
+                                        <div class="profile-kyc-badge">
+                                            <span class="profile-kyc-dot"></span>
+                                            KYC Верифицирован
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-dates">
+                                    <div class="profile-date-item">
+                                        <span class="profile-date-label">Регистрация пользователя:</span>
+                                        <span class="profile-date-value">12.01.2026</span>
+                                    </div>
+                                    <div class="profile-date-item">
+                                        <span class="profile-date-label">Первая сделка:</span>
+                                        <span class="profile-date-value">24.01.2026</span>
+                                    </div>
+                                    <div class="profile-date-item">
+                                        <span class="profile-date-label">Последняя сделка:</span>
+                                        <span class="profile-date-value">09.04.2026</span>
+                                    </div>
+                                </div>
+
+                                <button class="profile-settings-btn">Настройки</button>
+                            </div>
+                        </div>
+
+                        <div class="profile-stats">
+                            <h3 class="profile-stats__title">Статистика профиля</h3>
+
+                            <div class="profile-stats__grid">
+                                <div class="profile-stat-item">
+                                    <div class="profile-stat-icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1378_11319)">
+                                                <path
+                                                    d="M12.9974 2.16697C14.4344 2.17168 15.8563 2.46135 17.1806 3.01921C18.505 3.57707 19.7056 4.39204 20.7129 5.41697H17.3307C17.0434 5.41697 16.7678 5.5311 16.5647 5.73427C16.3615 5.93743 16.2474 6.21298 16.2474 6.5003C16.2474 6.78762 16.3615 7.06317 16.5647 7.26633C16.7678 7.4695 17.0434 7.58363 17.3307 7.58363H21.819C22.3524 7.58335 22.8639 7.3713 23.2412 6.99409C23.6184 6.61687 23.8304 6.10534 23.8307 5.57188V1.08363C23.8307 0.796314 23.7166 0.520764 23.5134 0.3176C23.3102 0.114436 23.0347 0.000298961 22.7474 0.000298961C22.4601 0.000298961 22.1845 0.114436 21.9813 0.3176C21.7782 0.520764 21.664 0.796314 21.664 1.08363V3.3348C19.8735 1.72221 17.6693 0.639909 15.2985 0.20911C12.9276 -0.221689 10.4836 0.0160202 8.24022 0.895617C5.99681 1.77521 4.04255 3.26197 2.5963 5.18938C1.15005 7.1168 0.2689 9.40877 0.0515377 11.8086C0.0375447 11.9595 0.0551298 12.1116 0.103173 12.2553C0.151215 12.399 0.228662 12.5311 0.330579 12.6432C0.432495 12.7553 0.556647 12.845 0.695122 12.9065C0.833598 12.9679 0.983362 12.9999 1.13487 13.0003C1.39984 13.0037 1.65653 12.908 1.8547 12.7321C2.05287 12.5562 2.17825 12.3126 2.20629 12.0491C2.44745 9.35244 3.68826 6.84339 5.68496 5.01487C7.68166 3.18635 10.2899 2.17053 12.9974 2.16697Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M24.8688 13.0001C24.6038 12.9967 24.3471 13.0923 24.149 13.2683C23.9508 13.4442 23.8254 13.6877 23.7974 13.9513C23.6183 16.0131 22.8515 17.9803 21.5881 19.6195C20.3246 21.2587 18.6175 22.501 16.6692 23.1992C14.7209 23.8973 12.6133 24.022 10.5963 23.5584C8.57926 23.0947 6.73758 22.0622 5.28971 20.5834H8.67188C8.95919 20.5834 9.23474 20.4693 9.43791 20.2661C9.64107 20.063 9.75521 19.7874 9.75521 19.5001C9.75521 19.2128 9.64107 18.9372 9.43791 18.7341C9.23474 18.5309 8.95919 18.4168 8.67188 18.4168H4.18363C3.9194 18.4166 3.65773 18.4685 3.41359 18.5696C3.16945 18.6706 2.94762 18.8188 2.76079 19.0057C2.57395 19.1925 2.42577 19.4143 2.32472 19.6585C2.22367 19.9026 2.17173 20.1643 2.17188 20.4285V24.9168C2.17188 25.2041 2.28601 25.4796 2.48918 25.6828C2.69234 25.886 2.96789 26.0001 3.25521 26.0001C3.54253 26.0001 3.81808 25.886 4.02124 25.6828C4.22441 25.4796 4.33854 25.2041 4.33854 24.9168V22.6656C6.12911 24.2782 8.33324 25.3605 10.7041 25.7913C13.075 26.2221 15.5189 25.9844 17.7624 25.1048C20.0058 24.2252 21.96 22.7384 23.4063 20.811C24.8525 18.8836 25.7337 16.5916 25.951 14.1918C25.965 14.0409 25.9474 13.8888 25.8994 13.7451C25.8514 13.6014 25.7739 13.4693 25.672 13.3572C25.5701 13.2451 25.4459 13.1554 25.3075 13.0939C25.169 13.0325 25.0203 13.0005 24.8688 13.0001Z"
+                                                    fill="#E85002" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1378_11319">
+                                                    <rect width="26" height="26" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="profile-stat-content">
+                                        <div class="profile-stat-title">Всего сделок - 24</div>
+                                        <div class="profile-stat-desc">Из них 14 покупок и 10 продаж</div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-stat-item">
+                                    <div class="profile-stat-icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1378_11303)">
+                                                <path
+                                                    d="M20.5833 2.16667H19.5V1.08333C19.5 0.796015 19.3859 0.520465 19.1827 0.317301C18.9795 0.114137 18.704 0 18.4167 0C18.1293 0 17.8538 0.114137 17.6506 0.317301C17.4475 0.520465 17.3333 0.796015 17.3333 1.08333V2.16667H8.66667V1.08333C8.66667 0.796015 8.55253 0.520465 8.34937 0.317301C8.1462 0.114137 7.87065 0 7.58333 0C7.29602 0 7.02047 0.114137 6.8173 0.317301C6.61414 0.520465 6.5 0.796015 6.5 1.08333V2.16667H5.41667C3.98061 2.16839 2.60385 2.73962 1.5884 3.75507C0.572955 4.77052 0.00172018 6.14727 0 7.58333L0 20.5833C0.00172018 22.0194 0.572955 23.3961 1.5884 24.4116C2.60385 25.427 3.98061 25.9983 5.41667 26H20.5833C22.0194 25.9983 23.3961 25.427 24.4116 24.4116C25.427 23.3961 25.9983 22.0194 26 20.5833V7.58333C25.9983 6.14727 25.427 4.77052 24.4116 3.75507C23.3961 2.73962 22.0194 2.16839 20.5833 2.16667ZM2.16667 7.58333C2.16667 6.72138 2.50908 5.89473 3.11857 5.28524C3.72806 4.67574 4.55471 4.33333 5.41667 4.33333H20.5833C21.4453 4.33333 22.2719 4.67574 22.8814 5.28524C23.4909 5.89473 23.8333 6.72138 23.8333 7.58333V8.66667H2.16667V7.58333ZM20.5833 23.8333H5.41667C4.55471 23.8333 3.72806 23.4909 3.11857 22.8814C2.50908 22.2719 2.16667 21.4453 2.16667 20.5833V10.8333H23.8333V20.5833C23.8333 21.4453 23.4909 22.2719 22.8814 22.8814C22.2719 23.4909 21.4453 23.8333 20.5833 23.8333Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M13 17.875C13.8975 17.875 14.625 17.1475 14.625 16.25C14.625 15.3525 13.8975 14.625 13 14.625C12.1025 14.625 11.375 15.3525 11.375 16.25C11.375 17.1475 12.1025 17.875 13 17.875Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M7.57812 17.875C8.47559 17.875 9.20312 17.1475 9.20312 16.25C9.20312 15.3525 8.47559 14.625 7.57812 14.625C6.68066 14.625 5.95312 15.3525 5.95312 16.25C5.95312 17.1475 6.68066 17.875 7.57812 17.875Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M18.4219 17.875C19.3193 17.875 20.0469 17.1475 20.0469 16.25C20.0469 15.3525 19.3193 14.625 18.4219 14.625C17.5244 14.625 16.7969 15.3525 16.7969 16.25C16.7969 17.1475 17.5244 17.875 18.4219 17.875Z"
+                                                    fill="#E85002" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1378_11303">
+                                                    <rect width="26" height="26" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="profile-stat-content">
+                                        <div class="profile-stat-title">Сделок за 30 дней - 8</div>
+                                        <div class="profile-stat-desc">Процент выполнение составляет 96.00%</div>
+                                    </div>
+                                </div>
+
+                                <div class="profile-stat-item">
+                                    <div class="profile-stat-icon">
+                                        <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1378_11313)">
+                                                <path
+                                                    d="M17.3322 16.7917C17.1286 16.7917 16.9217 16.7343 16.7386 16.614L12.4052 13.767C12.1008 13.5655 11.9167 13.2264 11.9167 12.8613V7.58333C11.9167 6.98425 12.4009 6.5 13 6.5C13.5991 6.5 14.0833 6.98425 14.0833 7.58333V12.2774L17.9281 14.8027C18.4286 15.132 18.5672 15.8037 18.239 16.3031C18.031 16.6205 17.6843 16.7917 17.3322 16.7917ZM13.7735 23.8063C13.5178 23.8247 13.26 23.8333 13 23.8333C7.0265 23.8333 2.16667 18.9735 2.16667 13C2.16667 7.0265 7.0265 2.16667 13 2.16667C16.4136 2.16667 19.6213 3.80467 21.6537 6.5H18.4167C17.8176 6.5 17.3333 6.98425 17.3333 7.58333C17.3333 8.18242 17.8176 8.66667 18.4167 8.66667H22.75C23.9449 8.66667 24.9167 7.69492 24.9167 6.5V2.16667C24.9167 1.56758 24.4324 1.08333 23.8333 1.08333C23.2342 1.08333 22.75 1.56758 22.75 2.16667V4.446C20.3049 1.67158 16.7624 0 13 0C5.83158 0 0 5.83158 0 13C0 20.1684 5.83158 26 13 26C13.312 26 13.6207 25.9881 13.9273 25.9664C14.5242 25.9242 14.9738 25.4052 14.9305 24.8094C14.8882 24.2136 14.3758 23.7532 13.7735 23.8063ZM24.9167 11.9167C24.3176 11.9167 23.8333 12.4009 23.8333 13C23.8333 13.4929 23.7997 13.9891 23.7337 14.4733C23.6535 15.067 24.0695 15.613 24.661 15.6932C24.7108 15.6997 24.7596 15.7029 24.8083 15.7029C25.3424 15.7029 25.8072 15.3086 25.8808 14.7658C25.9588 14.1852 25.9989 13.5904 25.9989 13C25.9989 12.4009 25.5157 11.9167 24.9167 11.9167ZM23.9817 17.7623C23.4574 17.472 22.7977 17.667 22.5117 18.1913C22.2766 18.6203 22.009 19.0385 21.7154 19.435C21.3601 19.916 21.463 20.5942 21.9429 20.9506C22.1379 21.0936 22.3632 21.1618 22.5864 21.1618C22.919 21.1618 23.2462 21.0091 23.4596 20.7231C23.8095 20.2475 24.1312 19.7459 24.4129 19.2313C24.7011 18.707 24.5082 18.0483 23.9839 17.7613L23.9817 17.7623ZM18.8565 22.1173C18.4416 22.3838 18.0082 22.6233 17.5662 22.828C17.0235 23.0804 16.7873 23.7239 17.0397 24.2667C17.2239 24.6621 17.6139 24.8939 18.0234 24.8939C18.1762 24.8939 18.3311 24.8625 18.4784 24.7932C19.0103 24.5451 19.5325 24.2591 20.0297 23.9384C20.5335 23.6145 20.6787 22.945 20.3547 22.4413C20.0308 21.9397 19.3602 21.7945 18.8576 22.1163L18.8565 22.1173Z"
+                                                    fill="#E85002" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1378_11313">
+                                                    <rect width="26" height="26" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="profile-stat-content">
+                                        <div class="profile-stat-title">Опытный трейдер</div>
+                                        <div class="profile-stat-desc">Работает более 30 дней</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="my-ads-section">
+                            <div class="my-ads-header">
+                                <h2 class="my-ads-title">Мои объявления</h2>
+
+                                <div class="my-ads-controls">
+                                    <div class="ads-tabs">
+                                        <button class="ads-tab active">Все</button>
+                                        <button class="ads-tab">Активные</button>
+                                        <button class="ads-tab">Неактивные</button>
+                                    </div>
+
+                                    <button class="btn btn-create-ad">Создать объявление</button>
+                                </div>
+                            </div>
+
+                            <table class="ads-table">
+                                <thead class="ads-table-header">
+                                    <tr>
+                                        <th>Тип / Пара</th>
+                                        <th>Цена</th>
+                                        <th>Доступно / Лимиты</th>
+                                        <th>Способы оплаты</th>
+                                        <th>Таймер</th>
+                                        <th>Статус</th>
+                                        <th>Действия</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="ads-table-row">
+                                        <td data-label="Тип / Пара">
+                                            <div class="ad-type-pair">
+                                                <span class="ad-pair-name">USDT/RUB</span>
+                                                <span class="ad-type-tag sell">Продажа</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Цена">
+                                            <div class="ad-price">
+                                                <span class="ad-price-value">92.45</span>
+                                                <span class="ad-price-pair">RUB/USDT</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Доступно / Лимиты">
+                                            <div class="ad-available">
+                                                <span class="ad-available-amount">12,450 USDT</span>
+                                                <span class="ad-limits">Лимиты: 1,000 - 500,000 ₽</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Способы оплаты">
+                                            <div class="ad-payment-methods">
+                                                <span class="payment-tag">Сбербанк</span>
+                                                <span class="payment-tag">СБП</span>
+                                                <span class="payment-tag">Тинькофф</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Таймер">
+                                            <div class="ad-timer">
+                                                <span class="ad-timer-payment">Оплата: 15 мин</span>
+                                                <span class="ad-timer-confirm">Подтв: 10 мин</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Статус">
+                                            <div class="ad-status">
+                                                <span class="status-dot active"></span>
+                                                <span class="status-text active">Активно</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Действия">
+                                            <div class="ad-actions">
+                                                <button class="btn-action edit">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11484)">
+                                                            <path
+                                                                d="M0.586 9.55822C0.210901 9.9332 0.000113275 10.4418 0 10.9722L0 11.9987H1.0265C1.55689 11.9986 2.06551 11.7878 2.4405 11.4127L9.112 4.74122L7.2575 2.88672L0.586 9.55822Z"
+                                                                fill="#E85002" />
+                                                            <path
+                                                                d="M11.5768 0.427435C11.455 0.305553 11.3104 0.208863 11.1513 0.142893C10.9921 0.0769241 10.8215 0.0429688 10.6493 0.0429688C10.477 0.0429687 10.3064 0.0769241 10.1472 0.142893C9.98809 0.208863 9.84351 0.305553 9.72175 0.427435L7.96875 2.18094L9.82325 4.03544L11.5768 2.28244C11.6986 2.16068 11.7953 2.0161 11.8613 1.85695C11.9273 1.6978 11.9612 1.52721 11.9612 1.35494C11.9612 1.18266 11.9273 1.01207 11.8613 0.852922C11.7953 0.693775 11.6986 0.549191 11.5768 0.427435Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11484">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Изм.
+                                                </button>
+                                                <button class="btn-action pause">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 0C2.73478 0 2.48043 0.184374 2.29289 0.512563C2.10536 0.840752 2 1.28587 2 1.75V10.25C2 10.7141 2.10536 11.1592 2.29289 11.4874C2.48043 11.8156 2.73478 12 3 12C3.26522 12 3.51957 11.8156 3.70711 11.4874C3.89464 11.1592 4 10.7141 4 10.25V1.75C4 1.28587 3.89464 0.840752 3.70711 0.512563C3.51957 0.184374 3.26522 0 3 0Z"
+                                                            fill="#E85002" />
+                                                        <path
+                                                            d="M8 0C7.73478 0 7.48043 0.184374 7.29289 0.512563C7.10536 0.840752 7 1.28587 7 1.75V10.25C7 10.7141 7.10536 11.1592 7.29289 11.4874C7.48043 11.8156 7.73478 12 8 12C8.26522 12 8.51957 11.8156 8.70711 11.4874C8.89464 11.1592 9 10.7141 9 10.25V1.75C9 1.28587 8.89464 0.840752 8.70711 0.512563C8.51957 0.184374 8.26522 0 8 0Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                    Пауза
+                                                </button>
+                                                <button class="btn-action delete">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11508)">
+                                                            <path
+                                                                d="M7.06044 5.99998L11.7803 1.28068C12.0732 0.987704 12.0732 0.512692 11.7803 0.219735C11.4873 -0.073245 11.0123 -0.073245 10.7193 0.219735L5.99998 4.93953L1.28068 0.219735C0.987704 -0.073245 0.512692 -0.073245 0.219735 0.219735C-0.0732216 0.512715 -0.073245 0.987727 0.219735 1.28068L4.93953 5.99998L0.219735 10.7193C-0.073245 11.0123 -0.073245 11.4873 0.219735 11.7803C0.512715 12.0732 0.987727 12.0732 1.28068 11.7803L5.99998 7.06044L10.7193 11.7803C11.0123 12.0732 11.4873 12.0732 11.7802 11.7803C12.0732 11.4873 12.0732 11.0123 11.7802 10.7193L7.06044 5.99998Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11508">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="ads-table-row ads-table-row-enable">
+                                        <td data-label="Тип / Пара">
+                                            <div class="ad-type-pair">
+                                                <span class="ad-pair-name">USDT/RUB</span>
+                                                <span class="ad-type-tag sell">Продажа</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Цена">
+                                            <div class="ad-price">
+                                                <span class="ad-price-value">92.45</span>
+                                                <span class="ad-price-pair">RUB/USDT</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Доступно / Лимиты">
+                                            <div class="ad-available">
+                                                <span class="ad-available-amount">12,450 USDT</span>
+                                                <span class="ad-limits">Лимиты: 1,000 - 500,000 ₽</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Способы оплаты">
+                                            <div class="ad-payment-methods">
+                                                <span class="payment-tag">Сбербанк</span>
+                                                <span class="payment-tag">СБП</span>
+                                                <span class="payment-tag">Тинькофф</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Таймер">
+                                            <div class="ad-timer">
+                                                <span class="ad-timer-payment">Оплата: 15 мин</span>
+                                                <span class="ad-timer-confirm">Подтв: 10 мин</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Статус">
+                                            <div class="ad-status">
+                                                <span class="status-dot inactive"></span>
+                                                <span class="status-text inactive">Неактивно</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Действия">
+                                            <div class="ad-actions">
+                                                <button class="btn-action edit">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11484)">
+                                                            <path
+                                                                d="M0.586 9.55822C0.210901 9.9332 0.000113275 10.4418 0 10.9722L0 11.9987H1.0265C1.55689 11.9986 2.06551 11.7878 2.4405 11.4127L9.112 4.74122L7.2575 2.88672L0.586 9.55822Z"
+                                                                fill="#E85002" />
+                                                            <path
+                                                                d="M11.5768 0.427435C11.455 0.305553 11.3104 0.208863 11.1513 0.142893C10.9921 0.0769241 10.8215 0.0429688 10.6493 0.0429688C10.477 0.0429687 10.3064 0.0769241 10.1472 0.142893C9.98809 0.208863 9.84351 0.305553 9.72175 0.427435L7.96875 2.18094L9.82325 4.03544L11.5768 2.28244C11.6986 2.16068 11.7953 2.0161 11.8613 1.85695C11.9273 1.6978 11.9612 1.52721 11.9612 1.35494C11.9612 1.18266 11.9273 1.01207 11.8613 0.852922C11.7953 0.693775 11.6986 0.549191 11.5768 0.427435Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11484">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Изм.
+                                                </button>
+                                                <button class="btn-action enable">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.26832 4.31764L5.85035 1.40259C5.58338 1.17522 5.2675 1.03827 4.93771 1.00693C4.60793 0.975579 4.27712 1.05106 3.98196 1.22499C3.6868 1.39893 3.43881 1.66453 3.26549 1.99235C3.09216 2.32018 3.00027 2.69742 3 3.08227V8.9153C2.99949 9.30052 3.0909 9.67835 3.26405 10.0067C3.43721 10.3351 3.68533 10.6012 3.98078 10.7753C4.27623 10.9494 4.60742 11.0247 4.9375 10.9929C5.26758 10.961 5.58358 10.8233 5.85035 10.595L9.26832 7.67992C9.49511 7.48634 9.67953 7.23337 9.80665 6.94149C9.93376 6.6496 10 6.32701 10 5.99982C10 5.67263 9.93376 5.35004 9.80665 5.05816C9.67953 4.76628 9.49511 4.51331 9.26832 4.31973V4.31764Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                    Включить
+                                                </button>
+                                                <button class="btn-action delete">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11508)">
+                                                            <path
+                                                                d="M7.06044 5.99998L11.7803 1.28068C12.0732 0.987704 12.0732 0.512692 11.7803 0.219735C11.4873 -0.073245 11.0123 -0.073245 10.7193 0.219735L5.99998 4.93953L1.28068 0.219735C0.987704 -0.073245 0.512692 -0.073245 0.219735 0.219735C-0.0732216 0.512715 -0.073245 0.987727 0.219735 1.28068L4.93953 5.99998L0.219735 10.7193C-0.073245 11.0123 -0.073245 11.4873 0.219735 11.7803C0.512715 12.0732 0.987727 12.0732 1.28068 11.7803L5.99998 7.06044L10.7193 11.7803C11.0123 12.0732 11.4873 12.0732 11.7802 11.7803C12.0732 11.4873 12.0732 11.0123 11.7802 10.7193L7.06044 5.99998Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11508">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="ads-table-row">
+                                        <td data-label="Тип / Пара">
+                                            <div class="ad-type-pair">
+                                                <span class="ad-pair-name">USDT/RUB</span>
+                                                <span class="ad-type-tag sell">Продажа</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Цена">
+                                            <div class="ad-price">
+                                                <span class="ad-price-value">92.45</span>
+                                                <span class="ad-price-pair">RUB/USDT</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Доступно / Лимиты">
+                                            <div class="ad-available">
+                                                <span class="ad-available-amount">12,450 USDT</span>
+                                                <span class="ad-limits">Лимиты: 1,000 - 500,000 ₽</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Способы оплаты">
+                                            <div class="ad-payment-methods">
+                                                <span class="payment-tag">Сбербанк</span>
+                                                <span class="payment-tag">СБП</span>
+                                                <span class="payment-tag">Тинькофф</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Таймер">
+                                            <div class="ad-timer">
+                                                <span class="ad-timer-payment">Оплата: 15 мин</span>
+                                                <span class="ad-timer-confirm">Подтв: 10 мин</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Статус">
+                                            <div class="ad-status">
+                                                <span class="status-dot active"></span>
+                                                <span class="status-text active">Активно</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Действия">
+                                            <div class="ad-actions">
+                                                <button class="btn-action edit">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11484)">
+                                                            <path
+                                                                d="M0.586 9.55822C0.210901 9.9332 0.000113275 10.4418 0 10.9722L0 11.9987H1.0265C1.55689 11.9986 2.06551 11.7878 2.4405 11.4127L9.112 4.74122L7.2575 2.88672L0.586 9.55822Z"
+                                                                fill="#E85002" />
+                                                            <path
+                                                                d="M11.5768 0.427435C11.455 0.305553 11.3104 0.208863 11.1513 0.142893C10.9921 0.0769241 10.8215 0.0429688 10.6493 0.0429688C10.477 0.0429687 10.3064 0.0769241 10.1472 0.142893C9.98809 0.208863 9.84351 0.305553 9.72175 0.427435L7.96875 2.18094L9.82325 4.03544L11.5768 2.28244C11.6986 2.16068 11.7953 2.0161 11.8613 1.85695C11.9273 1.6978 11.9612 1.52721 11.9612 1.35494C11.9612 1.18266 11.9273 1.01207 11.8613 0.852922C11.7953 0.693775 11.6986 0.549191 11.5768 0.427435Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11484">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Изм.
+                                                </button>
+                                                <button class="btn-action pause">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 0C2.73478 0 2.48043 0.184374 2.29289 0.512563C2.10536 0.840752 2 1.28587 2 1.75V10.25C2 10.7141 2.10536 11.1592 2.29289 11.4874C2.48043 11.8156 2.73478 12 3 12C3.26522 12 3.51957 11.8156 3.70711 11.4874C3.89464 11.1592 4 10.7141 4 10.25V1.75C4 1.28587 3.89464 0.840752 3.70711 0.512563C3.51957 0.184374 3.26522 0 3 0Z"
+                                                            fill="#E85002" />
+                                                        <path
+                                                            d="M8 0C7.73478 0 7.48043 0.184374 7.29289 0.512563C7.10536 0.840752 7 1.28587 7 1.75V10.25C7 10.7141 7.10536 11.1592 7.29289 11.4874C7.48043 11.8156 7.73478 12 8 12C8.26522 12 8.51957 11.8156 8.70711 11.4874C8.89464 11.1592 9 10.7141 9 10.25V1.75C9 1.28587 8.89464 0.840752 8.70711 0.512563C8.51957 0.184374 8.26522 0 8 0Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                    Пауза
+                                                </button>
+                                                <button class="btn-action delete">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11508)">
+                                                            <path
+                                                                d="M7.06044 5.99998L11.7803 1.28068C12.0732 0.987704 12.0732 0.512692 11.7803 0.219735C11.4873 -0.073245 11.0123 -0.073245 10.7193 0.219735L5.99998 4.93953L1.28068 0.219735C0.987704 -0.073245 0.512692 -0.073245 0.219735 0.219735C-0.0732216 0.512715 -0.073245 0.987727 0.219735 1.28068L4.93953 5.99998L0.219735 10.7193C-0.073245 11.0123 -0.073245 11.4873 0.219735 11.7803C0.512715 12.0732 0.987727 12.0732 1.28068 11.7803L5.99998 7.06044L10.7193 11.7803C11.0123 12.0732 11.4873 12.0732 11.7802 11.7803C12.0732 11.4873 12.0732 11.0123 11.7802 10.7193L7.06044 5.99998Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11508">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="ads-table-row">
+                                        <td data-label="Тип / Пара">
+                                            <div class="ad-type-pair">
+                                                <span class="ad-pair-name">USDT/RUB</span>
+                                                <span class="ad-type-tag sell">Продажа</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Цена">
+                                            <div class="ad-price">
+                                                <span class="ad-price-value">92.45</span>
+                                                <span class="ad-price-pair">RUB/USDT</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Доступно / Лимиты">
+                                            <div class="ad-available">
+                                                <span class="ad-available-amount">12,450 USDT</span>
+                                                <span class="ad-limits">Лимиты: 1,000 - 500,000 ₽</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Способы оплаты">
+                                            <div class="ad-payment-methods">
+                                                <span class="payment-tag">Сбербанк</span>
+                                                <span class="payment-tag">СБП</span>
+                                                <span class="payment-tag">Тинькофф</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Таймер">
+                                            <div class="ad-timer">
+                                                <span class="ad-timer-payment">Оплата: 15 мин</span>
+                                                <span class="ad-timer-confirm">Подтв: 10 мин</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Статус">
+                                            <div class="ad-status">
+                                                <span class="status-dot active"></span>
+                                                <span class="status-text active">Активно</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Действия">
+                                            <div class="ad-actions">
+                                                <button class="btn-action edit">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11484)">
+                                                            <path
+                                                                d="M0.586 9.55822C0.210901 9.9332 0.000113275 10.4418 0 10.9722L0 11.9987H1.0265C1.55689 11.9986 2.06551 11.7878 2.4405 11.4127L9.112 4.74122L7.2575 2.88672L0.586 9.55822Z"
+                                                                fill="#E85002" />
+                                                            <path
+                                                                d="M11.5768 0.427435C11.455 0.305553 11.3104 0.208863 11.1513 0.142893C10.9921 0.0769241 10.8215 0.0429688 10.6493 0.0429688C10.477 0.0429687 10.3064 0.0769241 10.1472 0.142893C9.98809 0.208863 9.84351 0.305553 9.72175 0.427435L7.96875 2.18094L9.82325 4.03544L11.5768 2.28244C11.6986 2.16068 11.7953 2.0161 11.8613 1.85695C11.9273 1.6978 11.9612 1.52721 11.9612 1.35494C11.9612 1.18266 11.9273 1.01207 11.8613 0.852922C11.7953 0.693775 11.6986 0.549191 11.5768 0.427435Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11484">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Изм.
+                                                </button>
+                                                <button class="btn-action pause">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 0C2.73478 0 2.48043 0.184374 2.29289 0.512563C2.10536 0.840752 2 1.28587 2 1.75V10.25C2 10.7141 2.10536 11.1592 2.29289 11.4874C2.48043 11.8156 2.73478 12 3 12C3.26522 12 3.51957 11.8156 3.70711 11.4874C3.89464 11.1592 4 10.7141 4 10.25V1.75C4 1.28587 3.89464 0.840752 3.70711 0.512563C3.51957 0.184374 3.26522 0 3 0Z"
+                                                            fill="#E85002" />
+                                                        <path
+                                                            d="M8 0C7.73478 0 7.48043 0.184374 7.29289 0.512563C7.10536 0.840752 7 1.28587 7 1.75V10.25C7 10.7141 7.10536 11.1592 7.29289 11.4874C7.48043 11.8156 7.73478 12 8 12C8.26522 12 8.51957 11.8156 8.70711 11.4874C8.89464 11.1592 9 10.7141 9 10.25V1.75C9 1.28587 8.89464 0.840752 8.70711 0.512563C8.51957 0.184374 8.26522 0 8 0Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                    Пауза
+                                                </button>
+                                                <button class="btn-action delete">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11508)">
+                                                            <path
+                                                                d="M7.06044 5.99998L11.7803 1.28068C12.0732 0.987704 12.0732 0.512692 11.7803 0.219735C11.4873 -0.073245 11.0123 -0.073245 10.7193 0.219735L5.99998 4.93953L1.28068 0.219735C0.987704 -0.073245 0.512692 -0.073245 0.219735 0.219735C-0.0732216 0.512715 -0.073245 0.987727 0.219735 1.28068L4.93953 5.99998L0.219735 10.7193C-0.073245 11.0123 -0.073245 11.4873 0.219735 11.7803C0.512715 12.0732 0.987727 12.0732 1.28068 11.7803L5.99998 7.06044L10.7193 11.7803C11.0123 12.0732 11.4873 12.0732 11.7802 11.7803C12.0732 11.4873 12.0732 11.0123 11.7802 10.7193L7.06044 5.99998Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11508">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="ads-table-row">
+                                        <td data-label="Тип / Пара">
+                                            <div class="ad-type-pair">
+                                                <span class="ad-pair-name">USDT/RUB</span>
+                                                <span class="ad-type-tag sell">Продажа</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Цена">
+                                            <div class="ad-price">
+                                                <span class="ad-price-value">92.45</span>
+                                                <span class="ad-price-pair">RUB/USDT</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Доступно / Лимиты">
+                                            <div class="ad-available">
+                                                <span class="ad-available-amount">12,450 USDT</span>
+                                                <span class="ad-limits">Лимиты: 1,000 - 500,000 ₽</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Способы оплаты">
+                                            <div class="ad-payment-methods">
+                                                <span class="payment-tag">Сбербанк</span>
+                                                <span class="payment-tag">СБП</span>
+                                                <span class="payment-tag">Тинькофф</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Таймер">
+                                            <div class="ad-timer">
+                                                <span class="ad-timer-payment">Оплата: 15 мин</span>
+                                                <span class="ad-timer-confirm">Подтв: 10 мин</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Статус">
+                                            <div class="ad-status">
+                                                <span class="status-dot active"></span>
+                                                <span class="status-text active">Активно</span>
+                                            </div>
+                                        </td>
+                                        <td data-label="Действия">
+                                            <div class="ad-actions">
+                                                <button class="btn-action edit">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11484)">
+                                                            <path
+                                                                d="M0.586 9.55822C0.210901 9.9332 0.000113275 10.4418 0 10.9722L0 11.9987H1.0265C1.55689 11.9986 2.06551 11.7878 2.4405 11.4127L9.112 4.74122L7.2575 2.88672L0.586 9.55822Z"
+                                                                fill="#E85002" />
+                                                            <path
+                                                                d="M11.5768 0.427435C11.455 0.305553 11.3104 0.208863 11.1513 0.142893C10.9921 0.0769241 10.8215 0.0429688 10.6493 0.0429688C10.477 0.0429687 10.3064 0.0769241 10.1472 0.142893C9.98809 0.208863 9.84351 0.305553 9.72175 0.427435L7.96875 2.18094L9.82325 4.03544L11.5768 2.28244C11.6986 2.16068 11.7953 2.0161 11.8613 1.85695C11.9273 1.6978 11.9612 1.52721 11.9612 1.35494C11.9612 1.18266 11.9273 1.01207 11.8613 0.852922C11.7953 0.693775 11.6986 0.549191 11.5768 0.427435Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11484">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Изм.
+                                                </button>
+                                                <button class="btn-action pause">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M3 0C2.73478 0 2.48043 0.184374 2.29289 0.512563C2.10536 0.840752 2 1.28587 2 1.75V10.25C2 10.7141 2.10536 11.1592 2.29289 11.4874C2.48043 11.8156 2.73478 12 3 12C3.26522 12 3.51957 11.8156 3.70711 11.4874C3.89464 11.1592 4 10.7141 4 10.25V1.75C4 1.28587 3.89464 0.840752 3.70711 0.512563C3.51957 0.184374 3.26522 0 3 0Z"
+                                                            fill="#E85002" />
+                                                        <path
+                                                            d="M8 0C7.73478 0 7.48043 0.184374 7.29289 0.512563C7.10536 0.840752 7 1.28587 7 1.75V10.25C7 10.7141 7.10536 11.1592 7.29289 11.4874C7.48043 11.8156 7.73478 12 8 12C8.26522 12 8.51957 11.8156 8.70711 11.4874C8.89464 11.1592 9 10.7141 9 10.25V1.75C9 1.28587 8.89464 0.840752 8.70711 0.512563C8.51957 0.184374 8.26522 0 8 0Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                    Пауза
+                                                </button>
+                                                <button class="btn-action delete">
+                                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1378_11508)">
+                                                            <path
+                                                                d="M7.06044 5.99998L11.7803 1.28068C12.0732 0.987704 12.0732 0.512692 11.7803 0.219735C11.4873 -0.073245 11.0123 -0.073245 10.7193 0.219735L5.99998 4.93953L1.28068 0.219735C0.987704 -0.073245 0.512692 -0.073245 0.219735 0.219735C-0.0732216 0.512715 -0.073245 0.987727 0.219735 1.28068L4.93953 5.99998L0.219735 10.7193C-0.073245 11.0123 -0.073245 11.4873 0.219735 11.7803C0.512715 12.0732 0.987727 12.0732 1.28068 11.7803L5.99998 7.06044L10.7193 11.7803C11.0123 12.0732 11.4873 12.0732 11.7802 11.7803C12.0732 11.4873 12.0732 11.0123 11.7802 10.7193L7.06044 5.99998Z"
+                                                                fill="#E85002" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1378_11508">
+                                                                <rect width="12" height="12" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </section>
+
+
+                    </div>
+                </div>
+
+                <div class="ads-tab-content" data-tab="deals">
+                    <div class="deals-placeholder">
+                        <section class="deals-section">
+                            <div class="deals-header">
+                                <h2 class="deals-title">Мои P2P сделки</h2>
+                                <p class="deals-subtitle">История всех сделок</p>
+                            </div>
+
+                            <div class="deals-filters">
+                                <div class="filter-group">
+                                    <label class="filter-label">Статус:</label>
+                                    <select class="filter-select">
+                                        <option>Все</option>
+                                        <option>Ожидает оплаты</option>
+                                        <option>Завершена</option>
+                                        <option>На арбитраже</option>
+                                        <option>Отменена</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label class="filter-label">Тип:</label>
+                                    <select class="filter-select">
+                                        <option>Все</option>
+                                        <option>Покупка</option>
+                                        <option>Продажа</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label class="filter-label">Роль:</label>
+                                    <select class="filter-select">
+                                        <option>Все</option>
+                                        <option>Покупатель</option>
+                                        <option>Продавец</option>
+                                    </select>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label class="filter-label">Дата от:</label>
+                                    <div class="filter-date-wrapper">
+                                        <input type="datetime-local" class="filter-date" value="2026-04-10T15:10">
+                                        <svg class="date-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1378_11186)">
+                                                <path
+                                                    d="M14.25 1.5H13.5V0.75C13.5 0.551088 13.421 0.360322 13.2803 0.21967C13.1397 0.0790176 12.9489 0 12.75 0C12.5511 0 12.3603 0.0790176 12.2197 0.21967C12.079 0.360322 12 0.551088 12 0.75V1.5H6V0.75C6 0.551088 5.92098 0.360322 5.78033 0.21967C5.63968 0.0790176 5.44891 0 5.25 0C5.05109 0 4.86032 0.0790176 4.71967 0.21967C4.57902 0.360322 4.5 0.551088 4.5 0.75V1.5H3.75C2.7558 1.50119 1.80267 1.89666 1.09966 2.59966C0.396661 3.30267 0.00119089 4.2558 0 5.25L0 14.25C0.00119089 15.2442 0.396661 16.1973 1.09966 16.9003C1.80267 17.6033 2.7558 17.9988 3.75 18H14.25C15.2442 17.9988 16.1973 17.6033 16.9003 16.9003C17.6033 16.1973 17.9988 15.2442 18 14.25V5.25C17.9988 4.2558 17.6033 3.30267 16.9003 2.59966C16.1973 1.89666 15.2442 1.50119 14.25 1.5ZM1.5 5.25C1.5 4.65326 1.73705 4.08097 2.15901 3.65901C2.58097 3.23705 3.15326 3 3.75 3H14.25C14.8467 3 15.419 3.23705 15.841 3.65901C16.2629 4.08097 16.5 4.65326 16.5 5.25V6H1.5V5.25ZM14.25 16.5H3.75C3.15326 16.5 2.58097 16.2629 2.15901 15.841C1.73705 15.419 1.5 14.8467 1.5 14.25V7.5H16.5V14.25C16.5 14.8467 16.2629 15.419 15.841 15.841C15.419 16.2629 14.8467 16.5 14.25 16.5Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M9 12.375C9.62132 12.375 10.125 11.8713 10.125 11.25C10.125 10.6287 9.62132 10.125 9 10.125C8.37868 10.125 7.875 10.6287 7.875 11.25C7.875 11.8713 8.37868 12.375 9 12.375Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M5.25 12.375C5.87132 12.375 6.375 11.8713 6.375 11.25C6.375 10.6287 5.87132 10.125 5.25 10.125C4.62868 10.125 4.125 10.6287 4.125 11.25C4.125 11.8713 4.62868 12.375 5.25 12.375Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M12.75 12.375C13.3713 12.375 13.875 11.8713 13.875 11.25C13.875 10.6287 13.3713 10.125 12.75 10.125C12.1287 10.125 11.625 10.6287 11.625 11.25C11.625 11.8713 12.1287 12.375 12.75 12.375Z"
+                                                    fill="#E85002" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1378_11186">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="filter-group">
+                                    <label class="filter-label">Дата до:</label>
+                                    <div class="filter-date-wrapper">
+                                        <input type="datetime-local" class="filter-date" value="2026-04-10T15:10">
+                                        <svg class="date-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_1378_11186)">
+                                                <path
+                                                    d="M14.25 1.5H13.5V0.75C13.5 0.551088 13.421 0.360322 13.2803 0.21967C13.1397 0.0790176 12.9489 0 12.75 0C12.5511 0 12.3603 0.0790176 12.2197 0.21967C12.079 0.360322 12 0.551088 12 0.75V1.5H6V0.75C6 0.551088 5.92098 0.360322 5.78033 0.21967C5.63968 0.0790176 5.44891 0 5.25 0C5.05109 0 4.86032 0.0790176 4.71967 0.21967C4.57902 0.360322 4.5 0.551088 4.5 0.75V1.5H3.75C2.7558 1.50119 1.80267 1.89666 1.09966 2.59966C0.396661 3.30267 0.00119089 4.2558 0 5.25L0 14.25C0.00119089 15.2442 0.396661 16.1973 1.09966 16.9003C1.80267 17.6033 2.7558 17.9988 3.75 18H14.25C15.2442 17.9988 16.1973 17.6033 16.9003 16.9003C17.6033 16.1973 17.9988 15.2442 18 14.25V5.25C17.9988 4.2558 17.6033 3.30267 16.9003 2.59966C16.1973 1.89666 15.2442 1.50119 14.25 1.5ZM1.5 5.25C1.5 4.65326 1.73705 4.08097 2.15901 3.65901C2.58097 3.23705 3.15326 3 3.75 3H14.25C14.8467 3 15.419 3.23705 15.841 3.65901C16.2629 4.08097 16.5 4.65326 16.5 5.25V6H1.5V5.25ZM14.25 16.5H3.75C3.15326 16.5 2.58097 16.2629 2.15901 15.841C1.73705 15.419 1.5 14.8467 1.5 14.25V7.5H16.5V14.25C16.5 14.8467 16.2629 15.419 15.841 15.841C15.419 16.2629 14.8467 16.5 14.25 16.5Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M9 12.375C9.62132 12.375 10.125 11.8713 10.125 11.25C10.125 10.6287 9.62132 10.125 9 10.125C8.37868 10.125 7.875 10.6287 7.875 11.25C7.875 11.8713 8.37868 12.375 9 12.375Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M5.25 12.375C5.87132 12.375 6.375 11.8713 6.375 11.25C6.375 10.6287 5.87132 10.125 5.25 10.125C4.62868 10.125 4.125 10.6287 4.125 11.25C4.125 11.8713 4.62868 12.375 5.25 12.375Z"
+                                                    fill="#E85002" />
+                                                <path
+                                                    d="M12.75 12.375C13.3713 12.375 13.875 11.8713 13.875 11.25C13.875 10.6287 13.3713 10.125 12.75 10.125C12.1287 10.125 11.625 10.6287 11.625 11.25C11.625 11.8713 12.1287 12.375 12.75 12.375Z"
+                                                    fill="#E85002" />
+                                            </g>
+                                            <defs>
+                                                <clipPath id="clip0_1378_11186">
+                                                    <rect width="18" height="18" fill="white" />
+                                                </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <button class="btn-reset">Сбросить</button>
+                            </div>
+
+                            <div class="deals-table-wrapper">
+                                <table class="deals-table">
+                                    <thead class="deals-table-header">
+                                        <tr>
+                                            <th>№ сделки</th>
+                                            <th>Дата</th>
+                                            <th>Тип</th>
+                                            <th>Актив / Пара</th>
+                                            <th>Сумма</th>
+                                            <th>Контрагент</th>
+                                            <th>Статус</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type buy">Покупка</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status waiting">
+                                                    <span class="status-dot"></span>
+                                                    Ожидает оплаты
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type sell">Продажа</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status completed">
+                                                    <span class="status-dot"></span>
+                                                    Завершена
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type buy">Покупка</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status arbitration">
+                                                    <span class="status-dot"></span>
+                                                    На арбитраже
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type buy">Покупка</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status cancelled">
+                                                    <span class="status-dot"></span>
+                                                    Отменена
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type sell">Продажа</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status completed">
+                                                    <span class="status-dot"></span>
+                                                    Завершена
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+
+                                        <tr class="deals-table-row">
+                                            <td data-label="№ сделки">
+                                                <span class="deal-number">#P2P-7821</span>
+                                            </td>
+                                            <td data-label="Дата">
+                                                <div class="deal-date">
+                                                    <span class="deal-date-main">03.04.2026</span>
+                                                    <span class="deal-date-time">14:32</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Тип">
+                                                <span class="deal-type sell">Продажа</span>
+                                            </td>
+                                            <td data-label="Актив / Пара">
+                                                <span class="deal-pair">RUB/USDT</span>
+                                            </td>
+                                            <td data-label="Сумма">
+                                                <div class="deal-amount">
+                                                    <span class="deal-amount-main">1,000 USDT</span>
+                                                    <span class="deal-amount-fiat">92,450 ₽</span>
+                                                </div>
+                                            </td>
+                                            <td data-label="Контрагент">
+                                                <span class="deal-counterparty">SkyTrader</span>
+                                            </td>
+                                            <td data-label="Статус">
+                                                <span class="deal-status completed">
+                                                    <span class="status-dot"></span>
+                                                    Завершена
+                                                </span>
+                                            </td>
+                                            <td>
+                                                <button class="btn-deal-arrow">
+                                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M17.34 7.43169L14.4375 4.49919C14.3678 4.4289 14.2848 4.3731 14.1934 4.33502C14.102 4.29695 14.004 4.27734 13.905 4.27734C13.806 4.27734 13.708 4.29695 13.6166 4.33502C13.5252 4.3731 13.4422 4.4289 13.3725 4.49919C13.2328 4.63971 13.1544 4.8298 13.1544 5.02794C13.1544 5.22608 13.2328 5.41617 13.3725 5.55669L16.0425 8.24919H0.75C0.551088 8.24919 0.360322 8.32821 0.21967 8.46886C0.0790177 8.60952 0 8.80028 0 8.99919C0 9.19811 0.0790177 9.38887 0.21967 9.52952C0.360322 9.67018 0.551088 9.74919 0.75 9.74919H16.0875L13.3725 12.4567C13.3022 12.5264 13.2464 12.6094 13.2083 12.7008C13.1703 12.7922 13.1507 12.8902 13.1507 12.9892C13.1507 13.0882 13.1703 13.1862 13.2083 13.2776C13.2464 13.369 13.3022 13.452 13.3725 13.5217C13.4422 13.592 13.5252 13.6478 13.6166 13.6859C13.708 13.7239 13.806 13.7435 13.905 13.7435C14.004 13.7435 14.102 13.7239 14.1934 13.6859C14.2848 13.6478 14.3678 13.592 14.4375 13.5217L17.34 10.6117C17.7614 10.1898 17.998 9.61794 17.998 9.02169C17.998 8.42544 17.7614 7.85357 17.34 7.43169Z"
+                                                            fill="#E85002" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                        </section>
+
+                        <div class="deals-pagination">
+                            <div class="pagination-controls">
+                                <button class="pagination-btn arrow arrow-left">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1378_11032)">
+                                            <path
+                                                d="M10.6214 14.9986C10.7036 14.9991 10.7852 14.9834 10.8613 14.9523C10.9375 14.9212 11.0067 14.8753 11.0651 14.8174C11.1237 14.7593 11.1702 14.6902 11.2019 14.614C11.2337 14.5378 11.25 14.4562 11.25 14.3736C11.25 14.2911 11.2337 14.2094 11.2019 14.1333C11.1702 14.0571 11.1237 13.988 11.0651 13.9299L5.95888 8.82365C5.60775 8.47209 5.41053 7.99553 5.41053 7.49865C5.41053 7.00177 5.60775 6.52521 5.95888 6.17365L11.0651 1.0674C11.1828 0.949711 11.2489 0.790089 11.2489 0.623651C11.2489 0.457212 11.1828 0.297591 11.0651 0.179901C10.9474 0.0622112 10.7878 -0.00390625 10.6214 -0.00390625C10.4549 -0.00390625 10.2953 0.0622112 10.1776 0.179901L5.07138 5.28615C4.78036 5.57644 4.54946 5.92128 4.39192 6.30094C4.23438 6.6806 4.15329 7.0876 4.15329 7.49865C4.15329 7.90969 4.23438 8.3167 4.39192 8.69636C4.54946 9.07602 4.78036 9.42086 5.07138 9.71115L10.1776 14.8174C10.236 14.8753 10.3053 14.9212 10.3814 14.9523C10.4576 14.9834 10.5391 14.9991 10.6214 14.9986Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1378_11032">
+                                                <rect width="15" height="15" fill="white"
+                                                    transform="matrix(-1 0 0 1 15 0)" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                                <button class="pagination-btn active">1</button>
+                                <button class="pagination-btn">2</button>
+                                <button class="pagination-btn">3</button>
+                                <button class="pagination-btn">4</button>
+                                <span class="pagination-dots">...</span>
+                                <button class="pagination-btn">10</button>
+                                <button class="pagination-btn arrow arrow-right">
+                                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1378_11035)">
+                                            <path
+                                                d="M4.37862 14.9986C4.29637 14.9991 4.21483 14.9834 4.13868 14.9523C4.06253 14.9212 3.99327 14.8753 3.93487 14.8174C3.87629 14.7593 3.8298 14.6902 3.79807 14.614C3.76634 14.5378 3.75 14.4562 3.75 14.3736C3.75 14.2911 3.76634 14.2094 3.79807 14.1333C3.8298 14.0571 3.87629 13.988 3.93487 13.9299L9.04112 8.82365C9.39225 8.47209 9.58947 7.99553 9.58947 7.49865C9.58947 7.00177 9.39225 6.52521 9.04112 6.17365L3.93487 1.0674C3.81718 0.949711 3.75107 0.790089 3.75107 0.623651C3.75107 0.457212 3.81718 0.297591 3.93487 0.179901C4.05256 0.0622112 4.21219 -0.00390625 4.37862 -0.00390625C4.54506 -0.00390625 4.70468 0.0622112 4.82237 0.179901L9.92862 5.28615C10.2196 5.57644 10.4505 5.92128 10.6081 6.30094C10.7656 6.6806 10.8467 7.0876 10.8467 7.49865C10.8467 7.90969 10.7656 8.3167 10.6081 8.69636C10.4505 9.07602 10.2196 9.42086 9.92862 9.71115L4.82237 14.8174C4.76397 14.8753 4.69471 14.9212 4.61857 14.9523C4.54242 14.9834 4.46088 14.9991 4.37862 14.9986Z"
+                                                fill="white" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1378_11035">
+                                                <rect width="15" height="15" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="pagination-info">Показано 6 из 120 сделок</div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+
+    <!-- Модальное окно KYC -->
+    <div class="kyc-modal" id="kycModal">
+        <div class="kyc-modal-overlay"></div>
+        <div class="kyc-modal-content">
+            <button class="kyc-modal-close" id="kycModalClose">&times;</button>
+
+            <div class="kyc-modal-icon">
+                <img src="assets/img/Gemini_Generated_Image_e4f1hre4f1hre4f1-no-bg-preview.png" alt="">
+            </div>
+
+            <h2 class="kyc-modal-title">Для участия в P2P торговле</h2>
+            <p class="kyc-modal-text">необходимо пройти верификацию личности (KYC)</p>
+
+            <button class="kyc-modal-btn">Перейти к верификации</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="create-ad-modal" id="createAdModal">
+        <div class="create-ad-modal-overlay"></div>
+        <div class="create-ad-modal-content">
+            <button class="create-ad-modal-close" id="createAdModalClose">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_1430_14386)">
+                        <path
+                            d="M8.23718 6.99998L13.7436 1.49413C14.0854 1.15232 14.0854 0.598141 13.7436 0.256358C13.4018 -0.0854526 12.8476 -0.0854526 12.5059 0.256358L6.99998 5.76278L1.49413 0.256358C1.15232 -0.0854526 0.598141 -0.0854526 0.256358 0.256358C-0.0854252 0.598168 -0.0854526 1.15235 0.256358 1.49413L5.76278 6.99998L0.256358 12.5059C-0.0854526 12.8477 -0.0854526 13.4018 0.256358 13.7436C0.598168 14.0854 1.15235 14.0854 1.49413 13.7436L6.99998 8.23718L12.5058 13.7436C12.8476 14.0854 13.4018 14.0854 13.7436 13.7436C14.0854 13.4018 14.0854 12.8476 13.7436 12.5059L8.23718 6.99998Z"
+                            fill="black" />
+                    </g>
+                    <defs>
+                        <clipPath id="clip0_1430_14386">
+                            <rect width="14" height="14" fill="white" />
+                        </clipPath>
+                    </defs>
+                </svg>
+            </button>
+
+            <div class="create-ad-modal-header">
+                <h2 class="create-ad-modal-title">Создать объявление</h2>
+                <p class="create-ad-modal-subtitle">Настройте условия вашего P2P-оффера</p>
+            </div>
+
+            <form class="create-ad-form">
+                <div class="form-block">
+                    <label class="form-block-title">Тип объявления:</label>
+                    <div class="ad-type-toggle">
+                        <button type="button" class="ad-type-btn active">Продать</button>
+                        <button type="button" class="ad-type-btn">Купить</button>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Актив и фиатная валюта:</label>
+                    <div class="form-row">
+                        <div class="form-select-wrapper-with-label">
+                            <select class="form-select">
+                                <option>USDT</option>
+                                <option>BTC</option>
+                                <option>ETH</option>
+                            </select>
+                            <label class="input-label-inside">Актив:</label>
+                        </div>
+                        <div class="form-select-wrapper-with-label">
+                            <select class="form-select">
+                                <option>RUB</option>
+                                <option>USD</option>
+                                <option>EUR</option>
+                            </select>
+                            <label class="input-label-inside">Фиатная валюта:</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Ценообразование:</label>
+                    <div class="input-wrapper-with-badge">
+                        <input type="text" class="form-input" placeholder=" " value="">
+                        <label class="input-label-inside">Процент премии (%):</label>
+                        <span class="input-badge">%</span>
+                    </div>
+                    <div class="price-hint">Положительное -наценка, отрицательное - скидка</div>
+                    <div class="calculation-block">
+                        <label class="calculation-label">Расчетная цена:</label>
+                        <div class="calculation-value green">92.40 RUB x 1.004 = 92.77 RUB / USDT</div>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Доступное количество и лимиты:</label>
+                    <div class="input-wrapper-with-badge">
+                        <input type="text" class="form-input" placeholder=" " value="5000">
+                        <label class="input-label-inside">Введите сумму:</label>
+                        <span class="input-badge">USDT</span>
+                    </div>
+                    <div class="balance-info-new">
+                        <span class="balance-label">Доступный баланс :</span>
+                        <span class="balance-amount">12,450 USDT</span>
+                        <button type="button" class="use-all-btn">Использовать весь</button>
+                    </div>
+                    <div class="limits-row">
+                        <div class="limit-item">
+                            <div class="input-wrapper-with-badge">
+                                <input type="text" class="form-input" placeholder=" " value="1000">
+                                <label class="input-label-inside">Мин. сумма сделки:</label>
+                                <span class="input-badge">RUB</span>
+                            </div>
+                        </div>
+                        <div class="limit-item">
+                            <div class="input-wrapper-with-badge">
+                                <input type="text" class="form-input" placeholder=" " value="200000">
+                                <label class="input-label-inside">Макс. сумма сделки:</label>
+                                <span class="input-badge">RUB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Способы оплаты:</label>
+                    <div class="payment-options">
+                        <label class="payment-option">
+                            <input type="radio" name="payment" checked>
+                            <span class="payment-radio"></span>
+                            <span class="payment-label">Сбербанк</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment">
+                            <span class="payment-radio"></span>
+                            <span class="payment-label">СБП</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment">
+                            <span class="payment-radio"></span>
+                            <span class="payment-label">Тинькофф</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment">
+                            <span class="payment-radio"></span>
+                            <span class="payment-label">Банк. перевод</span>
+                        </label>
+                        <label class="payment-option">
+                            <input type="radio" name="payment">
+                            <span class="payment-radio"></span>
+                            <span class="payment-label">ВТБ</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Таймеры:</label>
+
+                    <div class="form-select-wrapper-with-label">
+                        <select class="form-select" required>
+                            <option value="" disabled selected></option>
+                            <option>15 минут</option>
+                            <option>30 минут</option>
+                            <option>60 минут</option>
+                        </select>
+                        <label class="input-label-inside">Таймер оплаты (мин.):</label>
+                    </div>
+                    <div class="timer-hint">Время для покупателя на перевод фиата</div>
+
+                    <div class="form-select-wrapper-with-label">
+                        <select class="form-select" required>
+                            <option value="" disabled selected></option>
+                            <option>10 минут</option>
+                            <option>20 минут</option>
+                            <option>30 минут</option>
+                        </select>
+                        <label class="input-label-inside">Таймер подтверждения (мин.):</label>
+                    </div>
+                    <div class="timer-hint">Время для подтверждения получения</div>
+                </div>
+
+                <div class="form-block">
+                    <label class="form-block-title">Условия и комментарий:</label>
+                    <textarea class="form-textarea"
+                        placeholder="Переводите точную сумму. Обязательно укажите номер сделки в комментарии к переводу."></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn-publish">Опубликовать объявление</button>
+                    <button type="button" class="btn-cancel">Отменить</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>
