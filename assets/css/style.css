@@ -42,6 +42,57 @@ header {
     height: 120px;
 }
 
+.demo-nav {
+    background: #f8f9fa;
+    padding: 12px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #e2e2e2;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+
+.demo-nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 16px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+
+.demo-nav a:hover {
+    background: #e85002;
+    color: #fff;
+    border-color: #e85002;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 6px rgba(232, 80, 2, 0.2);
+}
+
+.demo-nav a.active {
+    background: #e85002;
+    color: #fff;
+    border-color: #e85002;
+}
+
+@media (max-width: 640px) {
+    .demo-nav {
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    .demo-nav a {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
 .btn {
     font-family: 'semibold';
     cursor: pointer;
@@ -3496,6 +3547,7 @@ footer {
         opacity: 0;
         transform: translateY(-20px) scale(0.95);
     }
+
     to {
         opacity: 1;
         transform: translateY(0) scale(1);
@@ -3665,12 +3717,12 @@ footer {
     margin-top: 2px;
 }
 
-.checkbox-input:checked + .checkbox-custom {
+.checkbox-input:checked+.checkbox-custom {
     background: #E85002;
     border-color: #E85002;
 }
 
-.checkbox-input:checked + .checkbox-custom::after {
+.checkbox-input:checked+.checkbox-custom::after {
     content: '';
     width: 5px;
     height: 11px;
