@@ -43,7 +43,7 @@
                         xmlns="http://www.w3.org/2000/svg">
                         <circle cx="4" cy="4" r="4" fill="#E79913" />
                     </svg>
-                    Ожидает оплаты</span>
+                    Ожидает подтверждения</span>
                 <div class="p2p-deal-meta">
                     <span>Создана: 20.04.2026 в 14:32</span>
                     <span>Покупка: USDT / RUB</span>
@@ -51,7 +51,7 @@
             </div>
 
             <!-- Степпер -->
-            <div class="p2p-deal-stepper">
+            <div class="p2p-deal-stepper p2p-deal-stepper-confirm">
                 <div class="p2p-step completed">
                     <div class="p2p-step-circle"><svg width="18" height="13" viewBox="0 0 18 13" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
@@ -61,11 +61,16 @@
                         </svg></div>
                     <span class="p2p-step-label">Сделка открыта</span>
                 </div>
-                <div class="p2p-step active">
-                    <div class="p2p-step-circle">02</div>
+                <div class="p2p-step completed">
+                    <div class="p2p-step-circle"><svg width="18" height="13" viewBox="0 0 18 13" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M5.51493 12.33C5.03009 12.3302 4.56511 12.1375 4.22257 11.7944L0.315317 7.88857C-0.105106 7.46802 -0.105106 6.78629 0.315317 6.36574C0.735874 5.94531 1.4176 5.94531 1.83815 6.36574L5.51493 10.0425L15.2421 0.315317C15.6627 -0.105106 16.3444 -0.105106 16.765 0.315317C17.1854 0.735874 17.1854 1.4176 16.765 1.83815L6.80729 11.7944C6.46475 12.1375 5.99977 12.3302 5.51493 12.33Z"
+                                fill="white" />
+                        </svg></div>
                     <span class="p2p-step-label">Оплата</span>
                 </div>
-                <div class="p2p-step">
+                <div class="p2p-step active">
                     <div class="p2p-step-circle">03</div>
                     <span class="p2p-step-label">Подтверждение</span>
                 </div>
@@ -112,32 +117,34 @@
                         <div class="p2p-timer-countdown">00:20</div>
                         <div class="p2p-timer-expires">Истекает: <b>14:47</b></div>
                     </div>
-                    <div class="p2p-timer-note">По окончанию таймера сделка будет отменена, а криптоактивы
-                        разблокированы.</div>
+                    <div class="p2p-timer-note">Подтвердите оплату до истечения</div>
                 </div>
 
                 <!-- Информационный блок -->
                 <div class="p2p-info-block p2p-info-block-seller">
                     <div class="p2p-info-block-seller-content">
-                        <h3 class="p2p-info-block-title">Информационный блок:</h3>
 
                         <div class="p2p-info-block-content">
-                            <div class="p2p-info-message p2p-info-message-gray">
-                                Ожидаем оплату от покупателя. Ваша криптовалюта (1,000 USDT) временно заблокирована в
-                                системе эскроу для обеспечения безопасности сделки.
-                            </div>
-
-                            <div class="p2p-info-message p2p-info-message-orange">
-                                Пожалуйста, не подтверждайте получение средств, пока не убедитесь в зачислении полной
-                                суммы
-                                на ваш банковский счет. Проверяйте ФИО отправителя.
+                            <div class="p2p-info-message p2p-info-message-orange p2p-info-message-warn">
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M10.7969 20.8008C16.3197 20.8008 20.7969 16.3236 20.7969 10.8008C20.7969 5.27793 16.3197 0.800781 10.7969 0.800781C5.27403 0.800781 0.796875 5.27793 0.796875 10.8008C0.796875 16.3236 5.27403 20.8008 10.7969 20.8008Z"
+                                        stroke="#E85002" stroke-width="1.6" stroke-linecap="square" />
+                                    <path d="M10.7969 14.8008V10.8008" stroke="#E85002" stroke-width="1.6"
+                                        stroke-linecap="square" />
+                                    <path
+                                        d="M10.9219 7.05078H10.7969M11.0469 7.05078C11.0469 6.91271 10.935 6.80078 10.7969 6.80078C10.6588 6.80078 10.5469 6.91271 10.5469 7.05078C10.5469 7.18885 10.6588 7.30078 10.7969 7.30078C10.935 7.30078 11.0469 7.18885 11.0469 7.05078Z"
+                                        stroke="#E85002" stroke-width="1.6" stroke-linecap="round" />
+                                </svg>
+                                Покупатель заявил об оплате. Проверьте поступление 92,450 ₽ и подтвердите получение.
                             </div>
                         </div>
-                    </div>
 
-                    <div class="p2p-deal-actions">
-                        <button class="p2p-btn p2p-btn-secondary">Отменить сделку</button>
-                        <button class="p2p-btn p2p-btn-danger" id="openArbitrationBtn">Арбитраж</button>
+                        <div class="p2p-deal-actions p2p-deal-actions-confirm">
+                            <button class="p2p-btn p2p-btn-primary">Подтвердить получение</button>
+                            <button class="p2p-btn p2p-btn-danger" id="openArbitrationBtn">Арбитраж</button>
+                        </div>
                     </div>
                 </div>
 

@@ -11,7 +11,7 @@
 
 <body>
 
-    <header class="demo-nav">
+  <header class="demo-nav">
         <a href="index.html">Экран 12.1. P2P Объявления (маркетплейс) (Авторизован, KYC пройден)</a>
         <a href="unauthorized.html">Экран 12.1. P2P Объявления (маркетплейс) (Неавторизованный пользователь)</a>
         <a href="empty_result.html">Экран 12.1. P2P Объявления (маркетплейс) (Пустой результат фильтрации)</a>
@@ -39,11 +39,11 @@
                     </svg>
                     назад</a>
                 <h1 class="p2p-deal-title">Сделка P2P-7821</h1>
-                <span class="p2p-deal-status"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="4" cy="4" r="4" fill="#E79913" />
+                <span class="p2p-deal-status p2p-deal-status-cancelled"><svg width="8" height="8" viewBox="0 0 8 8"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#9CA3AF" />
                     </svg>
-                    Ожидает оплаты</span>
+                    Отменена</span>
                 <div class="p2p-deal-meta">
                     <span>Создана: 20.04.2026 в 14:32</span>
                     <span>Покупка: USDT / RUB</span>
@@ -51,17 +51,12 @@
             </div>
 
             <!-- Степпер -->
-            <div class="p2p-deal-stepper">
+            <div class="p2p-deal-stepper p2p-deal-stepper-cancelled">
                 <div class="p2p-step completed">
-                    <div class="p2p-step-circle"><svg width="18" height="13" viewBox="0 0 18 13" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M5.51493 12.33C5.03009 12.3302 4.56511 12.1375 4.22257 11.7944L0.315317 7.88857C-0.105106 7.46802 -0.105106 6.78629 0.315317 6.36574C0.735874 5.94531 1.4176 5.94531 1.83815 6.36574L5.51493 10.0425L15.2421 0.315317C15.6627 -0.105106 16.3444 -0.105106 16.765 0.315317C17.1854 0.735874 17.1854 1.4176 16.765 1.83815L6.80729 11.7944C6.46475 12.1375 5.99977 12.3302 5.51493 12.33Z"
-                                fill="white" />
-                        </svg></div>
+                    <div class="p2p-step-circle">01</div>
                     <span class="p2p-step-label">Сделка открыта</span>
                 </div>
-                <div class="p2p-step active">
+                <div class="p2p-step">
                     <div class="p2p-step-circle">02</div>
                     <span class="p2p-step-label">Оплата</span>
                 </div>
@@ -75,9 +70,9 @@
                 </div>
             </div>
 
+
             <!-- Основной контент -->
             <div class="p2p-deal-grid">
-                <!-- Инфо карточки -->
                 <div class="p2p-info-cards">
                     <div class="p2p-info-card">
                         <span class="label">Вы покупаете:</span>
@@ -105,41 +100,27 @@
                     </div>
                 </div>
 
-                <!-- Таймер -->
-                <div class="p2p-timer-card">
-                    <div class="p2p-timer-label">Таймер оплаты:</div>
-                    <div class="p2p-timer-row">
-                        <div class="p2p-timer-countdown">00:20</div>
-                        <div class="p2p-timer-expires">Истекает: <b>14:47</b></div>
-                    </div>
-                    <div class="p2p-timer-note">По окончанию таймера сделка будет отменена, а криптоактивы
-                        разблокированы.</div>
-                </div>
-
-                <!-- Информационный блок -->
-                <div class="p2p-info-block p2p-info-block-seller">
-                    <div class="p2p-info-block-seller-content">
-                        <h3 class="p2p-info-block-title">Информационный блок:</h3>
-
-                        <div class="p2p-info-block-content">
-                            <div class="p2p-info-message p2p-info-message-gray">
-                                Ожидаем оплату от покупателя. Ваша криптовалюта (1,000 USDT) временно заблокирована в
-                                системе эскроу для обеспечения безопасности сделки.
-                            </div>
-
-                            <div class="p2p-info-message p2p-info-message-orange">
-                                Пожалуйста, не подтверждайте получение средств, пока не убедитесь в зачислении полной
-                                суммы
-                                на ваш банковский счет. Проверяйте ФИО отправителя.
+                <div class="p2p-success-block">
+                    <div class="p2p-deal-cancelled">
+                        <div class="p2p-deal-cancelled-content">
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M23.8385 13.0013C23.8385 7.01821 18.9882 2.16797 13.0052 2.16797C7.02212 2.16797 2.17188 7.01821 2.17188 13.0013C2.17188 18.9843 7.02212 23.8346 13.0052 23.8346C18.9882 23.8346 23.8385 18.9843 23.8385 13.0013Z"
+                                    stroke="#E85002" stroke-width="1.8" stroke-linecap="square" />
+                                <path d="M16.2494 16.25L9.75 9.75M9.75069 16.25L16.25 9.75" stroke="#E85002"
+                                    stroke-width="1.8" stroke-linecap="square" />
+                            </svg>
+                            <div class="p2p-cancelled-text">
+                                <span class="cancelled-red">Сделка отменена.</span> - Покупатель не оплатил в течении 15
+                                мин. <br>Актив 1,000 USDT -
+                                Разблокирован и возвращён продавцу.
                             </div>
                         </div>
-                    </div>
-
-                    <div class="p2p-deal-actions">
-                        <button class="p2p-btn p2p-btn-secondary">Отменить сделку</button>
-                        <button class="p2p-btn p2p-btn-danger" id="openArbitrationBtn">Арбитраж</button>
+                        <button class="p2p-back-marketplace-btn">Вернуться к маркетплейсу</button>
                     </div>
                 </div>
+
 
                 <!-- Чат -->
                 <div class="p2p-chat-card">
@@ -199,6 +180,7 @@
                         </button>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>

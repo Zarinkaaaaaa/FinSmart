@@ -17,8 +17,16 @@
         <a href="empty_result.html">Экран 12.1. P2P Объявления (маркетплейс) (Пустой результат фильтрации)</a>
         <a href="page_p2p_deal.html">Экран 12.5. Страница P2P сделки (ожидает оплату - покупатель)</a>
         <a href="page_p2p_deal_wait.html">Экран 12.5. Страница P2P сделки (ожидает подтверждение - покупатель)</a>
+        <a href="page_p2p_deal_seller.html">Экран 12.5. Страница P2P сделки (ожидает оплату - продавец)</a>
+        <a href="page_p2p_deal_confirm_seller.html">Экран 12.5. Страница P2P сделки (ожидает подтверждение - продавец)</a>
+        <a href="page_p2p_deal_arbitration.html">Экран 12.5. Страница P2P сделки (на арбитраже)</a>
+        <a href="page_p2p_deal_finish.html">Экран 12.5. Страница P2P сделки (завершена - покупатель)</a>
+        <a href="page_p2p_deal_finish_seller.html">Экран 12.5. Страница P2P сделки (завершена - продавец)</a>
+        <a href="page_p2p_deal_cancelled.html">Экран 12.5. Страница P2P сделки (отменена)</a>
+        <a href="page_p2p_deal_arbitration_finish.html">Экран 12.5. Страница P2P сделки (решено арбитром - победившая сторона)</a>
+        <a href="page_p2p_deal_arbitration_finish_loss.html">Экран 12.5. Страница P2P сделки (решено арбитром - проигравшая сторона)</a>
     </header>
-    
+
     <section class="ads">
         <div class="container">
             <!-- Шапка -->
@@ -31,11 +39,11 @@
                     </svg>
                     назад</a>
                 <h1 class="p2p-deal-title">Сделка P2P-7821</h1>
-                <span class="p2p-deal-status"><svg width="8" height="8" viewBox="0 0 8 8" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <circle cx="4" cy="4" r="4" fill="#E79913" />
+                <span class="p2p-deal-status p2p-deal-status-arbitration"><svg width="8" height="8" viewBox="0 0 8 8"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="4" cy="4" r="4" fill="#F6465D" />
                     </svg>
-                    Ожидает подтверждения</span>
+                    На арбитраже</span>
                 <div class="p2p-deal-meta">
                     <span>Создана: 20.04.2026 в 14:32</span>
                     <span>Покупка: USDT / RUB</span>
@@ -73,8 +81,71 @@
                 </div>
 
                 <!-- Информационный блок -->
-                <div class="p2p-info-block">
+                <div class="p2p-info-block p2p-info-block-arbitration">
 
+                    <div class="p2p-arbitration-warning">
+                        <div class="p2p-arbitration-warning-content">
+                            <div class="p2p-arbitration-icon">
+                                <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.1615 1.35547V11.3763H21.6615L10.8281 24.6471V14.6263H4.32812L15.1615 1.35547Z"
+                                        fill="#E79913" />
+                                </svg>
+                            </div>
+                            <div class="p2p-arbitration-text">
+                                <strong>Сделка на арбитраже.</strong> Криптовалюта заморожена в эскроу до вынесения
+                                решения.<br>
+                                Арбитр: <strong>admin_arbitr_01</strong> назначен 20.04.2026 в 15:10
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p2p-info-block-arbitration-content">
+                        <div class="p2p-arbitration-details">
+                            <h3 class="p2p-arbitration-details-title">Детали арбитража</h3>
+                            <div class="p2p-arbitration-info-grid">
+                                <div class="p2p-arbitration-info-card">
+                                    <span class="p2p-arbitration-label">Инициатор:</span>
+                                    <span class="p2p-arbitration-value">alex_trader (Покупатель)</span>
+                                </div>
+                                <div class="p2p-arbitration-info-card">
+                                    <span class="p2p-arbitration-label">Статус:</span>
+                                    <span class="p2p-arbitration-value">Рассматривается арбитром</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="p2p-evidence-section">
+                            <h3 class="p2p-evidence-title">Загрузите доказательства</h3>
+                            <div class="p2p-file-upload">
+                                <div class="p2p-file-upload-icon">
+                                    <svg width="64" height="59" viewBox="0 0 64 59" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g clip-path="url(#clip0_1378_12856)">
+                                            <path
+                                                d="M2.78422 54.0827C1.70841 53.0177 0.929361 51.7282 0.468027 50.2502C0.0318369 48.8547 -0.100735 47.3522 0.0756464 45.7855C0.42498 42.6511 1.97241 39.5837 4.43222 37.1489L35.5492 6.34132C39.1069 2.81915 43.5804 0.603417 48.1438 0.105962C50.4056 -0.141446 52.5716 0.0448639 54.5819 0.659989C56.6951 1.30642 58.5374 2.39712 60.0577 3.90345C61.5781 5.40977 62.6798 7.23214 63.3339 9.32455C63.9549 11.3144 64.1431 13.4592 63.8936 15.6983C63.3899 20.215 61.1518 24.6438 57.5941 28.166L26.9023 58.5512C26.7591 58.6958 26.5882 58.811 26.3998 58.8899C26.2113 58.9688 26.0089 59.01 25.8042 59.011C25.5996 59.012 25.3968 58.9729 25.2075 58.8958C25.0183 58.8188 24.8463 58.7053 24.7016 58.5621C24.5569 58.4188 24.4423 58.2486 24.3644 58.0613C24.2865 57.8739 24.247 57.6731 24.2479 57.4705C24.2489 57.2679 24.2905 57.0675 24.3702 56.8809C24.4499 56.6943 24.5661 56.5252 24.7122 56.3833L55.404 25.9982C61.633 19.8315 62.7381 10.892 57.8661 6.07204C52.9941 1.25211 43.9663 2.3447 37.7374 8.51104L6.62079 39.3167C4.6566 41.2613 3.42498 43.678 3.15412 46.1223C2.89584 48.4395 3.54269 50.4972 4.97622 51.916C6.40974 53.3349 8.49012 53.9764 10.8322 53.7196C13.3027 53.4484 15.7465 52.2268 17.7092 50.28L48.7831 19.4751C49.636 18.6295 50.1697 17.5893 50.2856 16.545C50.3873 15.6282 50.1442 14.8267 49.5998 14.2885C49.0555 13.7504 48.2459 13.509 47.3187 13.6097C46.2635 13.7251 45.212 14.2542 44.3579 15.0998L14.0052 45.1489C13.8619 45.2936 13.6911 45.4087 13.5026 45.4876C13.3142 45.5666 13.1117 45.6077 12.9071 45.6087C12.7025 45.6097 12.4997 45.5706 12.3104 45.4935C12.1211 45.4165 11.9492 45.3031 11.8044 45.1598C11.6597 45.0166 11.5451 44.8463 11.4673 44.659C11.3894 44.4716 11.3498 44.2708 11.3508 44.0682C11.3518 43.8656 11.3933 43.6653 11.473 43.4786C11.5527 43.292 11.669 43.1229 11.8151 42.9811L42.1671 12.9327C43.5172 11.5961 45.2257 10.7543 46.9777 10.5631C48.8581 10.3575 50.5667 10.9104 51.7884 12.1203C53.0101 13.3302 53.5686 15.0198 53.3621 16.8803C53.1694 18.6152 52.321 20.3052 50.9724 21.6418L19.8985 52.4467C17.4387 54.8849 14.3393 56.4195 11.1716 56.7669C9.58841 56.9404 8.06993 56.8099 6.65812 56.3781C5.16403 55.9217 3.86079 55.1497 2.78422 54.0827Z"
+                                                fill="#E85002" />
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_1378_12856">
+                                                <rect width="64" height="59" fill="white" />
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="p2p-file-upload-text">
+                                    Перетащите файлы или <span class="p2p-file-upload-link">нажмите для выбора</span>
+                                </div>
+                                <div class="p2p-file-upload-hint">JPG, PNG, PDF, до 5 шт.</div>
+                                <input type="file" class="p2p-file-input" multiple hidden>
+                            </div>
+
+                            <textarea class="p2p-evidence-textarea"
+                                placeholder="Опишите ситуацию подробнее..."></textarea>
+
+                            <button class="p2p-submit-evidence-btn">Отправить доказательства</button>
+                        </div>
+                    </div>
                 </div>
 
                 <!-- Чат -->

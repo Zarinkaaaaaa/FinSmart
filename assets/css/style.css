@@ -38,10 +38,6 @@
     margin: 0 auto;
 }
 
-header {
-    height: 120px;
-}
-
 .demo-nav {
     background: #f8f9fa;
     padding: 12px 20px;
@@ -50,7 +46,6 @@ header {
     gap: 10px;
     align-items: center;
     border-bottom: 1px solid #e2e2e2;
-    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 }
 
 .demo-nav a {
@@ -3011,6 +3006,7 @@ footer {
     display: flex;
     flex-direction: column;
     min-height: 500px;
+    max-height: 576px;
 }
 
 .p2p-chat-title {
@@ -3501,7 +3497,7 @@ footer {
 
 
 
-/*модальное окно арбитража*/
+/* Модальное окно арбитража */
 .arbitration-modal {
     display: none;
     position: fixed;
@@ -3534,12 +3530,30 @@ footer {
     background: white;
     border-radius: 30px;
     width: 100%;
-    max-width: 680px;
+    max-width: 960px;
     max-height: 90vh;
-    padding: 40px;
+    padding: 80px 148px;
     z-index: 2001;
     animation: modalSlideIn 0.3s ease;
     overflow-y: auto;
+}
+
+.arbitration-modal-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.arbitration-modal-content::-webkit-scrollbar-track {
+    background: transparent;
+    margin: 40px 0;
+}
+
+.arbitration-modal-content::-webkit-scrollbar-thumb {
+    background: #d1d1d1;
+    border-radius: 3px;
+}
+
+.arbitration-modal-content::-webkit-scrollbar-thumb:hover {
+    background: #b8b8b8;
 }
 
 @keyframes modalSlideIn {
@@ -3575,70 +3589,106 @@ footer {
 }
 
 .arbitration-modal-title {
-    font-size: 26px;
+    font-size: 34px;
     line-height: 100%;
     font-family: 'bold';
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 38px;
     color: #000;
 }
 
+.arbitration-form-wrapper {
+    background: #f5f5f5;
+    border-radius: 30px;
+    padding: 30px 49px 73px 49px;
+}
+
 .arbitration-warning {
-    background: #FFF8F0;
-    border-left: 3px solid #E85002;
-    border-radius: 16px;
-    padding: 16px 20px;
-    margin-bottom: 24px;
+    background: white;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    position: relative;
+}
+
+.arbitration-warning-line {
+    background: #E85002;
+    flex-shrink: 0;
+    align-self: center;
+    border-radius: 50px;
+    width: 2px;
+    height: 54px;
 }
 
 .arbitration-warning-text {
-    font-size: 14px;
-    line-height: 164%;
-    color: #6f6c6b;
+    font-size: 16px;
+    line-height: 170%;
+    flex: 1;
 }
 
 .arbitration-form {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
-    gap: 8px;
 }
 
-.form-label {
-    font-size: 14px;
-    line-height: 150%;
-    color: #6f6c6b;
+.input-wrapper {
+    position: relative;
 }
 
 .form-input {
-    padding: 16px 20px;
-    border: 1px solid #efefef;
-    border-radius: 30px;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+    border: none;
+    border-radius: 500px;
     font-size: 16px;
     outline: none;
     transition: all 0.2s;
     font-family: inherit;
-    background: #f9f9f9;
-}
-
-.form-input:focus {
-    border-color: #E85002;
     background: white;
 }
 
-.form-input::placeholder {
+.form-input:focus {
+    box-shadow: 0 0 0 2px rgba(232, 80, 2, 0.2);
+}
+
+.input-label-inside {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 150%;
     color: #999;
+    pointer-events: none;
+    transition: all 0.2s;
+    background: transparent;
+}
+
+.form-input:focus+.input-label-inside,
+.form-input:not(:placeholder-shown)+.input-label-inside {
+    top: 8px;
+    font-size: 12px;
+    color: #6f6c6b;
+    transform: translateY(0);
+}
+
+.form-input::placeholder {
+    color: transparent;
 }
 
 /* Зона загрузки файлов */
 .file-upload-area {
-    background: #f9f9f9;
-    border-radius: 30px;
+    background: white;
+    border-radius: 40px;
     padding: 48px 32px;
     text-align: center;
     display: flex;
@@ -3651,7 +3701,6 @@ footer {
 
 .file-upload-area:hover {
     border-color: #E85002;
-    background: #fff8f0;
 }
 
 .file-upload-icon {
@@ -3705,16 +3754,17 @@ footer {
 }
 
 .checkbox-custom {
-    width: 22px;
-    height: 22px;
-    border: 2px solid #e0e0e0;
-    border-radius: 6px;
     flex-shrink: 0;
     transition: all 0.2s;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 2px;
+    background: white;
+    border: 1px solid #ededed;
+    border-radius: 6px;
+    width: 26px;
+    height: 26px;
 }
 
 .checkbox-input:checked+.checkbox-custom {
@@ -3734,22 +3784,20 @@ footer {
 
 .checkbox-text {
     font-size: 14px;
-    line-height: 164%;
-    color: #6f6c6b;
+    line-height: 140%;
 }
 
 /* Кнопки */
 .arbitration-actions {
     display: flex;
     gap: 12px;
-    justify-content: center;
-    margin-top: 8px;
+    margin-top: 16px;
 }
 
 .arbitration-btn {
     padding: 16px 32px;
     border-radius: 100px;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 100%;
     font-family: 'semibold';
     cursor: pointer;
@@ -3763,6 +3811,7 @@ footer {
 .arbitration-btn-primary {
     background: #E85002;
     color: white;
+    max-width: 333px;
 }
 
 .arbitration-btn-primary:hover {
@@ -3775,7 +3824,7 @@ footer {
 }
 
 .arbitration-btn-secondary {
-    background: white;
+    background: none;
     color: #E85002;
     border: 1px solid #E85002;
 }
@@ -3793,6 +3842,11 @@ footer {
     .arbitration-modal-content {
         padding: 32px 24px;
         max-height: 95vh;
+        /* Увеличиваем на мобильных */
+    }
+
+    .arbitration-form-wrapper {
+        padding: 24px;
     }
 
     .arbitration-modal-title {
@@ -3802,10 +3856,6 @@ footer {
 
     .arbitration-warning {
         padding: 14px 16px;
-    }
-
-    .arbitration-warning-text {
-        font-size: 13px;
     }
 
     .file-upload-area {
@@ -3846,6 +3896,11 @@ footer {
         border-radius: 20px;
     }
 
+    .arbitration-form-wrapper {
+        padding: 20px;
+        border-radius: 20px;
+    }
+
     .arbitration-modal-title {
         font-size: 20px;
     }
@@ -3857,10 +3912,876 @@ footer {
 
     .file-upload-area {
         padding: 28px 16px;
-        border-radius: 20px;
     }
 
     .arbitration-btn {
         height: 48px;
     }
+}
+
+
+
+
+/* Модальное окно открытия сделки */
+.open-deal-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.open-deal-modal.active {
+    display: flex;
+}
+
+.open-deal-modal-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(4px);
+}
+
+.open-deal-modal-content {
+    position: relative;
+    background: white;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 960px;
+    padding: 60px 53px;
+    z-index: 2001;
+    animation: modalSlideIn 0.3s ease;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.open-deal-modal-close {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 40px;
+    height: 40px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+}
+
+
+.open-deal-modal-title {
+    font-size: 34px;
+    line-height: 100%;
+    font-family: 'bold';
+    margin-bottom: 18px;
+    color: #000;
+}
+
+.open-deal-modal-subtitle {
+    font-size: 18px;
+    line-height: 150%;
+    color: #6f6c6b;
+    margin-bottom: 42px;
+}
+
+.open-deal-info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 44px;
+}
+
+.open-deal-info-card {
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 16px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.open-deal-info-label {
+    font-size: 16px;
+    line-height: 150%;
+    color: #6f6c6b;
+}
+
+.open-deal-info-value {
+    font-size: 18px;
+    line-height: 130%;
+    font-family: 'semibold';
+    color: #000;
+}
+
+.open-deal-amount-section {
+    margin-bottom: 32px;
+}
+
+.open-deal-amount-label {
+    display: block;
+    font-size: 20px;
+    line-height: 170%;
+    font-family: 'semibold';
+    margin-bottom: 24px;
+    color: #000;
+}
+
+.open-deal-inputs-row {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.open-deal-input-wrapper {
+    position: relative;
+    flex: 1;
+}
+
+.open-deal-input {
+    width: 100%;
+    padding: 30px 90px 10px 20px;
+    border: 1px solid #efefef;
+    border-radius: 30px;
+    font-size: 16px;
+    font-family: 'semibold';
+    outline: none;
+    transition: all 0.2s;
+    background: #f9f9f9;
+    height: 56px;
+}
+
+.open-deal-input:focus {
+    border-color: #E85002;
+    background: white;
+}
+
+.open-deal-input[readonly] {
+    background: #f9f9f9;
+    cursor: default;
+}
+
+.open-deal-input-label {
+    position: absolute;
+    left: 20px;
+    top: 8px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #6f6c6b;
+    pointer-events: none;
+}
+
+.open-deal-currency-badge {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    border-radius: 500px;
+    pointer-events: none;
+    width: 82px;
+    height: 44px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open-deal-swap-btn {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: none;
+    border-radius: 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    flex-shrink: 0;
+}
+
+
+.open-deal-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.open-deal-btn {
+    border-radius: 100px;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'semibold';
+    cursor: pointer;
+    transition: all 0.2s;
+    border: none;
+    flex: 1;
+    max-width: 258px;
+    height: 50px;
+}
+
+.open-deal-btn-primary {
+    background: #E85002;
+    color: white;
+}
+
+.open-deal-btn-primary:hover {
+    background: #C94502;
+}
+
+.open-deal-btn-secondary {
+    background: white;
+    color: #E85002;
+    border: 1px solid #E85002;
+    max-width: 170px;
+}
+
+.open-deal-btn-secondary:hover {
+    background: #FFF0E6;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .open-deal-modal-content {
+        padding: 32px 24px;
+    }
+
+    .open-deal-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .open-deal-inputs-row {
+        flex-direction: column;
+    }
+
+    .open-deal-swap-btn {
+        transform: rotate(90deg);
+        width: 100%;
+    }
+
+    .open-deal-swap-btn:hover {
+        transform: rotate(270deg);
+    }
+
+    .open-deal-actions {
+        flex-direction: column;
+    }
+
+    .open-deal-btn {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .open-deal-modal-content {
+        padding: 24px 16px;
+        border-radius: 20px;
+    }
+
+    .open-deal-modal-title {
+        font-size: 22px;
+    }
+
+    .open-deal-input {
+        padding: 18px 80px 18px 16px;
+        font-size: 16px;
+    }
+
+    .open-deal-input-label {
+        font-size: 11px;
+        left: 16px;
+        top: 6px;
+    }
+
+    .open-deal-currency-badge {
+        right: 16px;
+        padding: 5px 12px;
+        font-size: 13px;
+    }
+}
+
+
+
+.p2p-info-block-seller {
+    display: flex;
+    flex-direction: column;
+    background: none;
+    padding: 0;
+
+}
+
+.p2p-info-block-seller-content {
+    background: #fff;
+    padding: 32px 34px;
+    border-radius: 30px;
+    margin-bottom: 12px;
+}
+
+.p2p-info-block-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p2p-info-message {
+    padding: 20px 24px;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.p2p-info-message-warn {
+    display: flex;
+    gap: 10px;
+}
+
+.p2p-info-message-gray {
+    background: #f9f9f9;
+}
+
+.p2p-info-message-orange {
+    background: #FDEEE6;
+}
+
+.p2p-deal-actions-confirm {
+    padding: 0;
+}
+
+.p2p-info-block-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-start;
+}
+
+.p2p-info-block-actions .p2p-btn {
+    height: 50px;
+    padding: 0 32px;
+}
+
+.p2p-info-block-actions .p2p-btn-secondary {
+    max-width: 248px;
+}
+
+.p2p-info-block-actions .p2p-btn-danger {
+    max-width: 246px;
+}
+
+@media (max-width: 640px) {
+    .p2p-info-block-seller {
+        gap: 16px;
+    }
+
+    .p2p-info-message {
+        padding: 16px 20px;
+        font-size: 14px;
+    }
+
+    .p2p-info-block-actions {
+        flex-direction: column;
+    }
+
+    .p2p-info-block-actions .p2p-btn {
+        max-width: 100% !important;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 968px) {
+    .p2p-info-block {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+
+    .p2p-chat-card {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .p2p-info-block {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+        margin-bottom: 20px;
+    }
+
+    .p2p-chat-card {
+        grid-column: 1 !important;
+        grid-row: auto !important;
+    }
+
+    .p2p-chat-card {
+        min-height: 300px;
+    }
+}
+
+
+
+/* Страница арбитража */
+.p2p-info-block-arbitration {
+    background: none;
+    padding: 0;
+}
+
+.p2p-info-block-arbitration-content {
+    background: white;
+    border-radius: 30px;
+    padding: 32px 34px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.p2p-deal-status-arbitration {
+    background: rgba(246, 70, 93, 0.14);
+    color: #f6465d;
+}
+
+.p2p-arbitration-warning {
+    background: #fff;
+    border-radius: 30px;
+    padding: 44px 34px;
+    margin-bottom: 20px;
+}
+
+.p2p-arbitration-warning-content {
+    background: #FDEEE6;
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.p2p-arbitration-icon {
+    flex-shrink: 0;
+}
+
+.p2p-arbitration-text {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.p2p-arbitration-text strong {
+    color: #E85002;
+    font-family: 'semibold';
+}
+
+.p2p-arbitration-details {
+    margin-bottom: 32px;
+}
+
+.p2p-arbitration-details-title {
+    font-size: 20px;
+    line-height: 170%;
+    font-family: 'semibold';
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.p2p-arbitration-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.p2p-arbitration-info-card {
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 20px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.p2p-arbitration-label {
+    font-size: 16px;
+    line-height: 150%;
+    color: #6f6c6b;
+}
+
+.p2p-arbitration-value {
+    font-size: 18px;
+    line-height: 140%;
+    font-family: 'semibold';
+}
+
+.p2p-evidence-section {
+    margin-top: 40px;
+}
+
+.p2p-evidence-title {
+    font-size: 18px;
+    line-height: 170%;
+    font-family: 'semibold';
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.p2p-file-upload {
+    background: #f9f9f9;
+    border: 2px dashed #e8e8e8;
+    border-radius: 30px;
+    padding: 48px 32px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.p2p-file-upload:hover {
+    border-color: #E85002;
+    background: #fff8f0;
+}
+
+.p2p-file-upload-icon {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.p2p-file-upload-text {
+    font-size: 16px;
+    line-height: 150%;
+    color: #6f6c6b;
+    margin-bottom: 8px;
+}
+
+.p2p-file-upload-link {
+    color: #E85002;
+    font-family: 'semibold';
+    cursor: pointer;
+}
+
+.p2p-file-upload-hint {
+    font-size: 14px;
+    line-height: 150%;
+    color: #999;
+}
+
+.p2p-evidence-textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 20px 24px;
+    border: 1px solid #efefef;
+    border-radius: 30px;
+    font-size: 16px;
+    line-height: 150%;
+    font-family: 'regular';
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.2s;
+    margin-bottom: 24px;
+    background: #f9f9f9;
+}
+
+.p2p-evidence-textarea:focus {
+    border-color: #E85002;
+}
+
+.p2p-submit-evidence-btn {
+    background: #E85002;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 48px;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'semibold';
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.p2p-submit-evidence-btn:hover {
+    background: #C94502;
+    transform: translateY(-2px);
+}
+
+.p2p-info-block-arbitration {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.p2p-info-block-arbitration~.p2p-chat-card {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+
+
+@media (max-width: 968px) {
+    .p2p-arbitration-info-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .p2p-info-block-arbitration {
+        padding: 24px 20px;
+    }
+
+    .p2p-arbitration-warning {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .p2p-file-upload {
+        padding: 32px 20px;
+    }
+
+    .p2p-evidence-textarea {
+        padding: 16px 20px;
+        min-height: 100px;
+    }
+
+    .p2p-submit-evidence-btn {
+        width: 100%;
+        padding: 16px 32px;
+    }
+}
+
+
+.p2p-deal-status-finish {
+    background: rgba(103, 180, 72, 0.14);
+    color: #67b448;
+}
+
+.p2p-deal-stepper-finish::after {
+    width: 75%;
+}
+
+
+.p2p-success-block {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.p2p-success-banner-content {
+    background: #fff;
+    border-radius: 30px;
+    padding: 46px 34px;
+}
+
+.p2p-success-banner {
+    background: #E8F5E9;
+    border-radius: 30px;
+    padding: 24px 28px;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.p2p-success-icon {
+    flex-shrink: 0;
+}
+
+.p2p-success-text {
+    font-size: 16px;
+    line-height: 170%;
+    color: #67b448;
+    font-family: 'semibold';
+}
+
+
+.p2p-deal-summary {
+    background: white;
+    border-radius: 30px;
+    padding: 32px 34px 72px 34px;
+}
+
+.p2p-summary-title {
+    font-size: 20px;
+    line-height: 170%;
+    font-family: 'semibold';
+    margin-bottom: 24px;
+    color: #000;
+}
+
+.p2p-summary-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-bottom: 46px;
+}
+
+.p2p-summary-card {
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 24px 26px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.p2p-summary-label {
+    font-size: 14px;
+    line-height: 150%;
+    color: #6f6c6b;
+}
+
+.p2p-summary-value {
+    font-size: 18px;
+    line-height: 130%;
+    font-family: 'semibold';
+    color: #000;
+}
+
+.p2p-back-marketplace-btn {
+    background: #E85002;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    padding: 18px 48px;
+    font-size: 18px;
+    line-height: 100%;
+    font-family: 'semibold';
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.p2p-back-marketplace-btn:hover {
+    background: #C94502;
+    transform: translateY(-2px);
+}
+
+.p2p-success-block {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.p2p-success-block~.p2p-chat-card {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+
+@media (max-width: 968px) {
+    .p2p-summary-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 640px) {
+    .p2p-success-block {
+        gap: 16px;
+    }
+
+    .p2p-success-banner {
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    .p2p-deal-summary {
+        padding: 24px 20px;
+    }
+
+    .p2p-back-marketplace-btn {
+        width: 100%;
+        padding: 16px 32px;
+    }
+}
+
+.p2p-deal-stepper-cancelled::after {
+    width: 0;
+}
+
+.p2p-deal-stepper-cancelled::before {
+    width: 75%;
+    left: 12%;
+}
+
+.p2p-deal-stepper-cancelled .p2p-step:not(.completed):not(.active) .p2p-step-circle {
+    color: #9E9E9E;
+    border: 1px solid #9E9E9E;
+}
+
+.p2p-deal-stepper-cancelled .p2p-step-label {
+    color: #9e9e9e;
+}
+
+.p2p-deal-status-cancelled {
+    color: #9ca3af;
+    background: #f5f5f5;
+}
+
+.p2p-deal-cancelled {
+    background: #fff;
+    border-radius: 30px;
+    padding: 33px;
+}
+
+.p2p-deal-cancelled-content {
+    margin-bottom: 40px;
+    background: #FDEEE6;
+    border-radius: 30px;
+    padding: 20px 24px;
+    display: flex;
+    gap: 10px;
+}
+
+.p2p-cancelled-text {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.cancelled-red {
+    color: #e85002;
+    font-family: 'semibold';
+}
+
+.p2p-success-text span {
+    color: #000;
+}
+
+
+.p2p-loss-banner {
+    background: rgba(246, 70, 93, 0.14);
+    align-items: center;
+}
+
+.p2p-loss-text {
+    color: #f6465d;
+}
+
+.p2p-deal-loss-info {
+    background: #f9f9f9;
+    border-radius: 30px;
+    padding: 34px;
+    margin-bottom: 46px;
+}
+
+.p2p-deal-loss-info p {
+    font-size: 16px;
+    line-height: 170%;
+}
+
+.p2p-deal-loss-info span {
+    font-size: 16px;
+    line-height: 150%;
+    color: #6f6c6b;
+    margin-bottom: 4px;
 }

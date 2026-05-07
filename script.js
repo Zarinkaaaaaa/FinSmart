@@ -284,3 +284,61 @@ submitArbitration.addEventListener('click', function() {
         closeArbitrationModal();
     }
 });
+
+
+
+
+/*открытие сделки*/
+const openDealModal = document.getElementById('openDealModal');
+const openDealModalClose = document.getElementById('openDealModalClose');
+const cancelDealBtn = document.querySelector('.open-deal-btn-secondary');
+const payAmountInput = document.getElementById('payAmount');
+const receiveAmountInput = document.getElementById('receiveAmount');
+const swapBtn = document.querySelector('.open-deal-swap-btn');
+
+function openDealModalHandler() {
+    openDealModal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function openDealModalHandler() {
+    const openDealModal = document.getElementById('openDealModal');
+    if (openDealModal) {
+        openDealModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+function closeDealModal() {
+    openDealModal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+openDealModalClose.addEventListener('click', closeDealModal);
+cancelDealBtn.addEventListener('click', closeDealModal);
+
+openDealModal.addEventListener('click', function(e) {
+    if (e.target.classList.contains('open-deal-modal-overlay')) {
+        closeDealModal();
+    }
+});
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && openDealModal.classList.contains('active')) {
+        closeDealModal();
+    }
+});
+
+swapBtn.addEventListener('click', function() {
+    const temp = payAmountInput.value;
+    payAmountInput.value = receiveAmountInput.value;
+    receiveAmountInput.value = temp;
+    
+});
+
+payAmountInput.addEventListener('input', function() {
+    const rubAmount = parseFloat(this.value) || 0;
+    const rate = 92.45; 
+    const usdtAmount = (rubAmount / rate).toFixed(2);
+    receiveAmountInput.value = usdtAmount;
+});
