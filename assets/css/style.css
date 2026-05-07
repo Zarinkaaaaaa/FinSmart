@@ -198,6 +198,11 @@
     font-size: 18px;
     line-height: 100%;
     color: #fff;
+    transition: all 0.2s;
+}
+.section-ads-create button:hover {
+    background: #C94502;
+    transform: translateY(-2px);
 }
 
 .section-ads-filters {
